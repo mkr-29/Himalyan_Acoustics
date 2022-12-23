@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.head_up{
+    margin-top: 2rem;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav_up_line{
+    display: flex;
+    height: .1rem;
+    width: 90%;
+    background-color: black;
+}
+.head_up_right{
+    display: flex;
+}
+.head_main{
+    width: 90%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.pg_title_left{
+    color: #0085FF;
+}
+.navlinks{
+    margin-top: 1rem;
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+}
+.landing{
+    display: flex;
+    justify-content: center;
+    height: 36rem;
+}
+.landing_whole{
+    display: flex;
+    width: 90%;
+    height: 100%;
+}
+.landing_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 50%;
+}
+.pg_title_landing{
+    font-size: 3rem;
+}
+.call_to_action{
+    margin-top: 1rem;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+.company_brief{
+    width: 80%;
+    margin-top: 1.2rem;
+}
+.stats{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.up_stats{
+    display: flex;
+    justify-content: space-between;
+    width: 26rem;
+}
+.stat_per{
+    font-size: 2rem;
+}
+.stat1{
+    width: 11rem;
+}
+.stat2{
+    margin-top: 2rem;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+.stat_brief2{
+    display: flex;
+    width: 70%;
+}
+.landing_end_line{
+    margin-top: 2rem;
+    width: 100%;
+    height: .1rem;
+    background-color: black;
+}
+.landing_right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* width: 50%; */
+}
+.carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.carousel__item :nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
