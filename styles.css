@@ -14,6 +14,47 @@
     flex-direction: row;
     justify-content: space-between;
 }
+.head_up_left{
+    display: flex;
+    width: 22rem;
+    justify-content: space-between;
+}
+.mail_nav{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.mail_nav_txt{
+    margin-left: 0.7rem;
+}
+.mail__nav_ico{
+    font-size: 1.5rem;
+}
+.phone_nav{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.phone_nav_txt{
+    margin-left: 0.7rem;
+}
+.phone_nav_ico{
+    font-size: 1.15rem;
+}
+.fb_ico{
+    width: 1.6rem;
+}
+.ln_ico{
+    width: 1.6rem;
+}
+.tw_ico{
+    width: 1.6rem;
+}
+.in_ico{
+    width: 1.6rem;
+}
 .nav_up_line{
     display: flex;
     height: .1rem;
@@ -22,6 +63,8 @@
 }
 .head_up_right{
     display: flex;
+    width: 15rem;
+    justify-content: space-between;
 }
 .head_main{
     width: 90%;
@@ -33,10 +76,15 @@
     color: #0085FF;
 }
 .navlinks{
+    text-decoration: none;
     margin-top: 1rem;
     display: flex;
     width: 35%;
     justify-content: space-between;
+}
+.navlink{
+    text-decoration: none;
+    color: black;
 }
 .landing{
     display: flex;
@@ -62,8 +110,41 @@
 .call_to_action{
     margin-top: 1rem;
     display: flex;
-    width: 50%;
+    align-items: center;
+    width: 27rem;
     justify-content: space-between;
+}
+.know_more{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    background-color: red;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: white;
+}
+.arrow_ico{
+    font-size: 0.7rem;
+    margin-left: 1rem;
+}
+.chat_ctc{
+    display: flex;
+    justify-content: space-between;
+    width: 11.5rem;
+}
+.whatsapp{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    background-color: red;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: white;
+}
+.wh_ico{
+    /* margin-left: 0.5rem; */
 }
 .company_brief{
     width: 80%;
