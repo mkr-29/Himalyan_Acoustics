@@ -1,102 +1,133 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-.header{
+
+h1 {
+    margin-bottom: 2rem;
+    color: #FFB81C;
+}
+
+p {
+    line-height: 21px;
+}
+
+.header {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.head_up{
+
+.head_up {
     margin-top: 2rem;
     width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.head_up_left{
+
+.head_up_left {
     display: flex;
     width: 22rem;
     justify-content: space-between;
 }
-.mail_nav{
+
+.mail_nav {
     text-decoration: none;
     color: black;
     display: flex;
     align-items: center;
 }
-.mail_nav_txt{
+
+.mail_nav_txt {
     margin-left: 0.7rem;
 }
-.mail__nav_ico{
+
+.mail__nav_ico {
     font-size: 1.5rem;
 }
-.phone_nav{
+
+.phone_nav {
     text-decoration: none;
     color: black;
     display: flex;
     align-items: center;
 }
-.phone_nav_txt{
+
+.phone_nav_txt {
     margin-left: 0.7rem;
 }
-.phone_nav_ico{
+
+.phone_nav_ico {
     font-size: 1.15rem;
 }
-.fb_ico{
+
+.fb_ico {
     width: 1.6rem;
 }
-.ln_ico{
+
+.ln_ico {
     width: 1.6rem;
 }
-.tw_ico{
+
+.tw_ico {
     width: 1.6rem;
 }
-.in_ico{
+
+.in_ico {
     width: 1.6rem;
 }
-.nav_up_line{
+
+.nav_up_line {
     display: flex;
     height: .1rem;
     width: 90%;
     background-color: black;
 }
-.head_up_right{
+
+.head_up_right {
     display: flex;
     width: 15rem;
     justify-content: space-between;
 }
-.head_main{
+
+.head_main {
     width: 90%;
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
 }
-.pg_title_left{
+
+.pg_title_left {
     color: #0085FF;
 }
-.navlinks{
+
+.navlinks {
     text-decoration: none;
     margin-top: 1rem;
     display: flex;
     width: 35%;
     justify-content: space-between;
 }
-.navlink{
+
+.navlink {
     text-decoration: none;
     color: black;
 }
-.landing{
+
+.landing {
     display: flex;
     justify-content: center;
     height: 33rem;
 }
-.landing_whole{
+
+.landing_whole {
     display: flex;
     width: 90%;
     height: 100%;
 }
-.landing_left{
+
+.landing_left {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -104,17 +135,20 @@
     height: 100%;
     width: 50%;
 }
-.pg_title_landing{
+
+.pg_title_landing {
     font-size: 3rem;
 }
-.call_to_action{
+
+.call_to_action {
     margin-top: 1rem;
     display: flex;
     align-items: center;
     width: 27rem;
     justify-content: space-between;
 }
-.know_more{
+
+.know_more {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -124,16 +158,19 @@
     border-radius: 0.5rem;
     color: white;
 }
-.arrow_ico{
+
+.arrow_ico {
     font-size: 0.7rem;
     margin-left: 1rem;
 }
-.chat_ctc{
+
+.chat_ctc {
     display: flex;
     justify-content: space-between;
     width: 11.5rem;
 }
-.whatsapp{
+
+.whatsapp {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -143,40 +180,49 @@
     border-radius: 0.5rem;
     color: white;
 }
-.wh_ico{
+
+/* .wh_ico {
     /* margin-left: 0.5rem; */
-}
-.company_brief{
+
+
+.company_brief {
     width: 80%;
     margin-top: 1.2rem;
 }
-.stats{
+
+.stats {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
 }
-.up_stats{
+
+.up_stats {
     display: flex;
     justify-content: space-between;
     width: 26rem;
 }
-.stat_per{
+
+.stat_per {
     font-size: 2rem;
 }
-.stat1{
+
+.stat1 {
     width: 11rem;
 }
-.stat2{
+
+.stat2 {
     margin-top: 2rem;
     display: flex;
     width: 80%;
     justify-content: space-between;
 }
-.stat_brief2{
+
+.stat_brief2 {
     display: flex;
     width: 70%;
 }
-.landing_right{
+
+.landing_right {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -185,32 +231,158 @@
     width: 100%;
     align-items: flex-end;
 }
-.landing_right_up{
+
+.landing_right_up {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-.box{
+
+.box {
     width: 33rem;
     border-radius: 1rem;
     height: 22rem;
     background-color: #0085FF;
 }
-.carousal_nav{
+
+.carousal_nav {
     margin: 0 0 0 2rem;
     display: flex;
     flex-direction: column;
 }
-.zero_one{
+
+.zero_one {
     display: absolute;
 }
-.landing_below{
+
+.landing_below {
     display: flex;
     width: 100%;
     justify-content: flex-end;
 }
-.landing_end_line{
+
+.landing_end_line {
     width: 72%;
     height: .1rem;
     background-color: black;
+}
+
+/* Prime partners */
+.prime-partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.accenture {
+    grid-area: 'accenture';
+    height: 3rem;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.partners {
+    display: grid;
+    row-gap: 2rem;
+    column-gap: 12rem;
+    grid-template-areas: 'accenture accenture accenture accenture accenture' 'accenture accenture accenture accenture accenture' 'accenture accenture accenture accenture accenture' 'accenture accenture accenture accenture accenture' 'accenture accenture accenture accenture accenture';
+}
+
+.contact-heading {
+    margin-left: 29rem;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contact-yellow {
+    padding: 2rem;
+    height: 20rem;
+    width: 40rem;
+    flex-direction: column;
+    background-color: #FFB81C;
+}
+
+.contact-box:nth-child(1) {
+    margin-right: 20rem;
+    margin-bottom: 3rem;
+}
+
+.contact-box:nth-child(2) {
+    margin-left: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-social_icons {
+    margin: 2rem 2rem;
+}
+
+.coffee {
+    margin: 1rem 0 0 0;
+}
+
+.contact-map {
+    width: 50%;
+    height: 30rem;
+    background-color: grey;
+    margin: 0rem 2rem;
+}
+
+.contact-bottm>h1 {
+    margin: 2rem;
+}
+
+/* From owner */
+.from-owner {
+    display: flex;
+    margin: 3rem 3rem;
+    justify-content: space-evenly;
+}
+
+.owner-img {
+    height: 25rem;
+    width: 25rem;
+    background-color: black;
+    border-radius: 3%;
+}
+
+.owner-quote {
+    margin: 0rem 2rem;
+    padding: 1rem;
+    width: 50%;
+}
+
+.owner-signature {
+    height: 7rem;
+    width: 7rem;
+    margin: 2rem 0;
+    background-color: gray;
+}
+
+
+/* Footer css */
+
+footer {
+    margin: 3rem;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* color: ; */
+}
+
+.footer-social_icons {
+    padding-top: 1rem;
 }
