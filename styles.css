@@ -4,6 +4,8 @@
     font-family: 'Ubuntu';
     font-style: normal;
 }
+
+/* Header */
 .header{
     display: flex;
     align-items: center;
@@ -19,7 +21,7 @@
 .head_up_left{
     font-size: 0.75rem;
     display: flex;
-    width: 30%;
+    width: 18rem;
     font-weight: 400;
     justify-content: space-between;
 }
@@ -110,6 +112,9 @@
 .home_nav{
     color: #FF2C3A;
 }
+
+
+/* Landing Page */
 .landing{
     display: flex;
     justify-content: center;
@@ -153,7 +158,7 @@
     margin-top: 1rem;
     display: flex;
     align-items: center;
-    width: 76%;
+    width: 21rem;
     font-size: 12px;
     justify-content: space-between;
 }
@@ -262,16 +267,21 @@
     display: flex;
     flex-direction: column;
 }
-.zero_one{
+.col_pin{
     position: absolute;
+    display: flex;
+    align-items: center;
+    right: 18%;
+    top: 70%;
+}
+.zero_one{
     font-weight: 700;
     font-size: 80px;
     color: #FFB9BE;
-    right: 35%;
-    top: 70%;
 }
 .the_colo{
-    position: absolute;
+    height: 2.7rem;
+    /* position: absolute; */
     font-weight: 400;
     font-size: 24px;
     top: 73.5%;
@@ -283,8 +293,8 @@
     font-weight: 400;
     font-size: 14px;
     color: #5C5C5C;
-    right: 28.1%;
-    top: 78.3%;
+    right: 36.1%;
+    top: 60.3%;
 }
 .landing_below{
     display: flex;
@@ -315,6 +325,9 @@
     position: absolute;
     top: 74%;
 }
+
+
+/* Services Offered */
 .services_offered{
     display: flex;
     width: 100%;
@@ -343,7 +356,7 @@
     align-items: center;
     position: absolute;
     rotate: 90deg;
-    left: -8.2%;
+    left: -5.2rem;
     top: 121.5%;
 }
 .services_offered_line{
@@ -392,6 +405,10 @@
     font-size: 13px;
     text-align: center;
 }
+
+
+
+/* Product Range */
 .product_range{
     margin-top: 4rem;
     display: flex;
@@ -483,12 +500,19 @@
     top: 260%;
     left: 0;
 }
+
+
+
+
+/* Why Us */
 .why_us{
     display: flex;
     margin-top: 5rem;
     width: 100%;
     justify-content: center;
-    background-image: url(/Assets/Ornaments/vector1.svg);
+    /* background-image: url(/Assets/Ornaments/vector1.svg); */
+    background: #FF2C3A;
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
 }
 .why_us_body{
     width: 80vw;
@@ -625,4 +649,8 @@
     font-weight: 700;
     font-size: 50px;
     color: #FFFFFF;
+}
+
+@media screen (width>1024) {
+    
 }
