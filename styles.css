@@ -538,7 +538,7 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    height: 50vh;
+    height: 60vh;
     align-items: center;
 }
 .eco_frip_body{
@@ -589,4 +589,40 @@
     position: absolute;
     top: 355%;
     left: 0;
+}
+.c_rev{
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.c_rev_body{
+    display: flex;
+    width: 88vw;
+    height: 68vh;
+    background: linear-gradient(235.9deg, #FF2C3A 42.66%, rgba(255, 44, 58, 0) 230.88%);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-around;
+}
+.ellipse_dec1{
+    position: absolute;
+    top: 391.5%;
+    left: 20%;
+    rotate: 10deg;
+}
+.c_rev_title{
+    color: #FF878F;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    width: 21rem;
+}
+.c_rev_title_middle{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    color: #FFFFFF;
 }
