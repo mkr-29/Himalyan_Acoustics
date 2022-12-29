@@ -1,0 +1,26 @@
+@media screen and (max-width:800px) {
+    .landing_whole{
+        flex-direction: column;
+        height: 98%;
+    }
+    .landing{
+        height: 45rem;
+    }
+    .landing_left{
+        justify-content: flex-start;
+    }
+    .landing_right{
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .col_pin {
+        top: 49.7rem;
+    }
+    .eco_frip_title{
+        top: 148rem;
+    }
+    .from_owner_orn{
+        top: 280rem;
+        font-size: 20rem;
+    }
+}

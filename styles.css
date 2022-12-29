@@ -569,7 +569,9 @@
     display: flex;
     justify-content: space-around;
     width: 92vw;
+    gap: 1rem;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 .eco_frip_title{
     display: flex;
@@ -649,8 +651,4 @@
     font-weight: 700;
     font-size: 50px;
     color: #FFFFFF;
-}
-
-@media screen (width>1024) {
-    
 }
