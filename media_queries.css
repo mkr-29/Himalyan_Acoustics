@@ -100,7 +100,8 @@
     top: 334%;
   }
   .from_owner_orn {
-    top: 263.6rem;
+    top: 264.1rem;
+    left: 4.9rem;
   }
 }
 
@@ -158,6 +159,8 @@
   }
   .eco_frip_title {
     top: 178rem;
+    font-size: 40px;
+    width: 20rem;
   }
   .from_owner_orn {
     top: 347rem;
@@ -238,10 +241,6 @@
   .meshed_rectangle2 {
     top: 184.7rem;
   }
-  .eco_frip_title {
-    font-size: 40px;
-    width: 20rem;
-  }
   .eco_txt {
     font-size: 15px;
   }
@@ -287,6 +286,9 @@
   .fb_ico, .ln_ico, .in_ico, .tw_ico {
     width: 1.1rem;
   }
+  .c_rev_br1{
+    display: none;
+  }
 }
 
 /* Media Query for Small Width Screen Devices */
@@ -294,4 +296,55 @@
   .head_up_right {
     width: 19%;
   }
+  .pg_title {
+    width: 7.2rem;
+  }
+  .col_pin {
+    top: 57.3rem;
+  }
+  .meshed_rectangle1 {
+    top: 106.7rem;
+  }
+  .ellipse4 {
+    top: 139.5rem;
+  }
+  .ellipse3 {
+    top: 177.5rem;
+  }
+  .eco_frip_title {
+    top: 183rem;
+  }
+  .prime-partners {
+    height: 118vh;
+  }
+  .from_owner_body {
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+  }
+  .owner-img {
+    width: 60%;
+  }
+  .from_owner_orn {
+    top: 375.4rem;
+    left: 7.8rem;
+  }
+  .owner-quote {
+    width: 90%;
+  }
+  .googleMap, .map {
+    height: 70vh;
+  }
+  .ellipse1 {
+    top: 58.5rem;
+  }
+  .ser_off_line_socials {
+    left: -5.4rem;
+    top: 78.8rem;
+  }
+  .ellipse2 {
+    top: 161%;
+  }
+  
+
 }
