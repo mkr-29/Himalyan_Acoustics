@@ -44,6 +44,11 @@ strong {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 80vh;
+}
+
+.p_part_head{
+  
 }
 
 .accenture {
@@ -56,6 +61,7 @@ strong {
 }
 
 .partners {
+  width: 88vw;
   display: flex;
   column-gap: 7rem;
   row-gap: 3rem;
@@ -217,7 +223,7 @@ strong {
   font-weight: 800;
   font-size: 500px;
   left: 3.6%;
-  top: 245rem;
+  top: 260.6rem;
   color: #FF2C3A;
 }
 

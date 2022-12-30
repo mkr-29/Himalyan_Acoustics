@@ -1,3 +1,108 @@
+@media screen and (min-width: 1200px){
+  .head_up_left {
+    font-size: 0.85rem;
+    width: 21rem;
+    font-weight: 500;
+  }
+  .fb_ico, .ln_ico, .tw_ico, .in_ico {
+    width: 1.1rem;
+  }
+  .pg_title, .pg_title_left {
+    font-size: 32px;
+  }
+  .navlinks {
+    align-items: center;
+  }
+  .navlink {
+    font-size: 16px;
+  }
+  .landing {
+    margin-top: 1.5rem;
+  }
+  .pg_title_landing {
+    font-size: 47px;
+  }
+  .know_more, .whatsapp {
+    font-size: 15px;
+  }
+  .chat_ctc {
+    width: 11.5rem;
+  }
+  .call_to_action {
+    width: 26rem;
+  }
+  .stat_per {
+    font-size: 38px;
+  }
+  .stat_brief, .stat_brief2, .company_brief, .tagline {
+    font-size: 14px;
+  }
+  .ren_wor {
+    font-size: 10px;
+  }
+  .ser_off_title {
+    font-size: 40px;
+  }
+  .ser_off_line_socials {
+    left: -3.6rem;
+    top: 118%;
+  }
+  .prod_range_title {
+    font-size: 52px;
+  }
+  .prod_range_range {
+    font-size: 41px;
+  }
+  .meshed_rectangle1 {
+    left: 9.3%;
+    top: 176%;
+  }
+  .ser_off_ic {
+    width: 1.1rem;
+  }
+  .ellipse4 {
+    top: 249%;
+  }
+  .ellipse3 {
+    top: 298%;
+  }
+  .ellipse5 {
+    top: 246%;
+  }
+  .why_us_title {
+    font-size: 48px;
+  }
+  .eco_frip_title {
+    font-size: 41px;
+    width: 20rem;
+  }
+  .meshed_rectangle2 {
+    top: 340%;
+  }
+  .eco_txt {
+    font-size: 15px;
+  }
+  .ellipse_dec1 {
+    top: 367.5%;
+  }
+  .c_rev_title {
+    font-size: 52px;
+    width: 24rem;
+  }
+  .c_rev_title_middle {
+    font-size: 58px;
+  }
+  .p_part_head{
+    font-size: 48px;
+  }
+  .meshed_rectangle3{
+    top: 334%;
+  }
+  .from_owner_orn {
+    top: 263.6rem;
+  }
+  
+}
 @media screen and (max-width: 800px) {
   .landing_whole {
     flex-direction: column;
@@ -43,40 +148,4 @@
   .ser_off_socials_pr {
     top: 120rem;
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-*{
-    margin: 0;
-    padding: 0;
-}
-header{
-    display: flex;
-    justify-content: space-between;
-    /* background-color: red; */
-    align-items: center;
-    padding: 0 2rem;
-    position: fixed;
-    width: 100%;
-}
-header .logo{
-    text-decoration: none;
-    font-size: 2rem;
-    color: white;
-}
-header ul{
-    display: flex;
-    text-decoration: none;
-    list-style: none;
-    width: 30%;
-    justify-content: space-between;
 }

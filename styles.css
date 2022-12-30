@@ -66,7 +66,7 @@
 .nav_up_line{
     display: flex;
     height: 1px;
-    width: 88%;
+    width: 88vw;
     background-color: #747474;
 }
 .head_up_right{
@@ -277,7 +277,7 @@
     display: flex;
     align-items: center;
     right: 18%;
-    top: 72%;
+    top: 70.5%;
 }
 .zero_one{
     font-weight: 700;
@@ -328,7 +328,8 @@
 }
 .ellipse1{
     position: absolute;
-    top: 74%;
+    top: 72%;
+    z-index: -1;
 }
 
 
@@ -344,6 +345,10 @@
     font-weight: 700;
     font-size: 32px;
     color: #FF2C3A;
+}
+.ser_off_socials{
+    display: flex;
+    gap: 0.5rem;
 }
 .ser_off_right{
     color: #959595;
@@ -361,12 +366,12 @@
     align-items: center;
     position: absolute;
     rotate: 90deg;
-    left: -5.2rem;
-    top: 122%;
+    left: -5rem;
+    top: 117%;
 }
 .services_offered_line{
     /* position: absolute; */
-    width: 14rem;
+    width: 13rem;
     height: 1px;
     background-color: #EDEDED;
     /* rotate: 90deg; */
@@ -377,6 +382,7 @@
 .ellipse2{
     position: absolute;
     right: 0;
+    top: 92%;
 }
 .ser_off_body{
     display: flex;
@@ -485,9 +491,9 @@
     height: auto;
 }
 .meshed_rectangle1{
-    left: 6%;
+    left: 5.7%;
     position: absolute;
-    top: 184%;
+    top: 174%;
     z-index: -1;
 }
 .ser_off_socials_pr{
@@ -495,14 +501,15 @@
     position: absolute;
     rotate: 90deg;
     left: 3%;
-    top: 252%;
+    top: 237%;
+    gap: 0.5rem;
 }
 .ellipse3{
     left: 0;
-    top: 308%;
+    top: 295%;
 }
 .ellipse4{
-    top: 260%;
+    top: 246%;
     left: 0;
 }
 
@@ -560,14 +567,14 @@
     justify-content: space-around;
 }
 .ellipse5{
-    top: 250%;
+    top: 243%;
     right: 0;
 }
 .eco_frip{
     display: flex;
     width: 100%;
     justify-content: center;
-    height: 60vh;
+    height: 45vh;
     align-items: center;
 }
 .eco_frip_body{
@@ -588,7 +595,7 @@
     color: #FF2C3A;
     width: 18rem;
     position: absolute;
-    top: 326%;
+    top: 311%;
     right: 4rem;
 }
 .eco_ico_box{
@@ -618,11 +625,18 @@
 }
 .meshed_rectangle2{
     position: absolute;
-    top: 355%;
+    top: 337%;
     left: 0;
 }
+.meshed_rectangle3{
+    z-index: -1;
+    position: absolute;
+    right: 4rem;
+    top: 334%;
+}
+
 .c_rev{
-    margin-top: 2rem;
+    margin-top: 3.5rem;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -638,9 +652,8 @@
 }
 .ellipse_dec1{
     position: absolute;
-    top: 391.5%;
+    top: 364.5%;
     left: 20%;
-    rotate: 10deg;
 }
 .c_rev_title{
     color: #FF878F;
