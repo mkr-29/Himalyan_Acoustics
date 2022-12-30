@@ -265,9 +265,9 @@
     align-items: center;
 }
 .box{
-    width: 38vw;
+    width: 28rem;
     border-radius: 1rem;
-    height: 45vh;
+    height: 19rem;
     background-color: #0085FF;
     /* margin-bottom: 2rem; */
 }
@@ -289,8 +289,8 @@
     color: #FFB9BE;
 }
 .the_colo{
+    width: 11rem;
     height: 2.7rem;
-    /* position: absolute; */
     font-weight: 400;
     font-size: 24px;
     top: 73.5%;
