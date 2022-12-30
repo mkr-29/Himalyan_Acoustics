@@ -79,8 +79,12 @@
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
+    position: sticky;
 }
+
 .pg_title{
+    text-decoration: none;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
@@ -119,6 +123,7 @@
     display: flex;
     justify-content: center;
     height: 58vh;
+    margin-top: 2.5rem;
 }
 .landing_whole{
     display: flex;
@@ -260,7 +265,7 @@
     border-radius: 1rem;
     height: 45vh;
     background-color: #0085FF;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 .carousal_nav{
     margin: 0 0 0 2rem;
@@ -272,7 +277,7 @@
     display: flex;
     align-items: center;
     right: 18%;
-    top: 70%;
+    top: 72%;
 }
 .zero_one{
     font-weight: 700;
@@ -357,7 +362,7 @@
     position: absolute;
     rotate: 90deg;
     left: -5.2rem;
-    top: 121.5%;
+    top: 122%;
 }
 .services_offered_line{
     /* position: absolute; */
