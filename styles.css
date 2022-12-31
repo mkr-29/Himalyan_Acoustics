@@ -674,3 +674,88 @@
     font-size: 50px;
     color: #FFFFFF;
 }
+.c_reviews{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.c_rev_serial{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    color: white;
+    width: 6rem;
+}
+.c_ser_uline{
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+}
+.c_rev_review{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+}
+.c_rev_name{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+}
+.c_rev_designation{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+}
+.c_rev_carousel{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    height: 3.5rem;
+}
+.c_caru{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+}
+.c_card{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: white;
+}
+.c_car_div{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.c_car_up{
+    display: flex;
+    align-items: flex-start;
+}
+.c_car_d{
+    display: flex;
+    align-items: flex-end;
+}
+.ar_fwd_cr{
+
+}
+.c_car_upu{
+    display: flex;
+    align-items: center;
+}
