@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Ubuntu';
@@ -6,75 +6,89 @@
 }
 
 /* Header */
-.header{
+.header {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.head_up{
+
+.head_up {
     margin-top: 2.5rem;
     width: 88vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.head_up_left{
+
+.head_up_left {
     font-size: 0.75rem;
     display: flex;
     width: 18rem;
     font-weight: 400;
     justify-content: space-between;
 }
-.mail_nav{
+
+.mail_nav {
     text-decoration: none;
     color: black;
     display: flex;
     align-items: center;
 }
-.mail_nav_txt{
+
+.mail_nav_txt {
     /* font-size: 1rem; */
     margin-left: 0.7rem;
 }
-.mail__nav_ico{
+
+.mail__nav_ico {
     /* font-size: 1.5rem; */
 }
-.phone_nav{
+
+.phone_nav {
     text-decoration: none;
     color: black;
     display: flex;
     align-items: center;
 }
-.phone_nav_txt{
+
+.phone_nav_txt {
     /* font-size: 1rem; */
     margin-left: 0.7rem;
 }
-.phone_nav_ico{
+
+/* .phone_nav_ico {
     /* font-size: 1.15rem; */
-}
-.fb_ico{
+
+.fb_ico {
     width: 0.9rem;
 }
-.ln_ico{
+
+.ln_ico {
     width: 0.9rem;
 }
-.tw_ico{
+
+.tw_ico {
     width: 0.9rem;
 }
-.in_ico{
+
+.in_ico {
     width: 0.9rem;
 }
-.nav_up_line{
+
+.nav_up_line {
     display: flex;
     height: 1px;
     width: 88vw;
     background-color: #747474;
 }
-.head_up_right{
+
+.head_up_right {
     display: flex;
     width: 14%;
     justify-content: space-between;
 }
-.head_main{
+
+.head_main {
     width: 88vw;
     margin-top: 2rem;
     display: flex;
@@ -83,7 +97,7 @@
     position: sticky;
 }
 
-.pg_title{
+.pg_title {
     text-decoration: none;
     font-family: 'Ubuntu';
     font-style: normal;
@@ -91,14 +105,16 @@
     font-size: 24px;
     color: #959595;
 }
-.pg_title_left{
+
+.pg_title_left {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     color: #FF2C3A;
 }
-.navlinks{
+
+.navlinks {
     text-decoration: none;
     margin-top: 0.5rem;
     display: flex;
@@ -106,10 +122,12 @@
     justify-content: space-between;
     overflow: hidden;
 }
+
 .navlinks .icon {
     display: none;
 }
-.navlink{
+
+.navlink {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
@@ -117,24 +135,27 @@
     text-decoration: none;
     color: black;
 }
-.home_nav{
+
+.home_nav {
     color: #FF2C3A;
 }
 
 
 /* Landing Page */
-.landing{
+.landing {
     display: flex;
     justify-content: center;
     height: 58vh;
     margin-top: 2.5rem;
 }
-.landing_whole{
+
+.landing_whole {
     display: flex;
     width: 88vw;
     height: 100%;
 }
-.landing_left{
+
+.landing_left {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,28 +163,33 @@
     height: 100%;
     width: 100%;
 }
-.pg_title_landing{
+
+.pg_title_landing {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
     margin-bottom: 0.4rem;
 }
-.pg_title_landing_right{
+
+.pg_title_landing_right {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
-    color:#959595;
+    color: #959595;
 }
-.tagline{
+
+.tagline {
     font-size: 12px;
     font-weight: 400;
     color: #5C5C5C;
 }
-.tagline_red{
+
+.tagline_red {
     color: #FF2C3A;
 }
-.call_to_action{
+
+.call_to_action {
     margin-top: 1rem;
     display: flex;
     align-items: center;
@@ -171,7 +197,8 @@
     font-size: 12px;
     justify-content: space-between;
 }
-.know_more{
+
+.know_more {
     font-weight: 400;
     font-size: 10px;
     display: flex;
@@ -183,16 +210,19 @@
     border-radius: 5px;
     color: white;
 }
-.arror_fwd_ico{
+
+.arror_fwd_ico {
     margin-left: 0.5rem;
     margin-top: 0.15rem;
 }
-.chat_ctc{
+
+.chat_ctc {
     width: 9.5rem;
     display: flex;
     justify-content: space-between;
 }
-.whatsapp{
+
+.whatsapp {
     font-weight: 400;
     font-size: 10px;
     display: flex;
@@ -204,91 +234,163 @@
     border-radius: 5px;
     color: white;
 }
-.wh_ico{
+
+/* .wh_ico {
     /* margin-left: 0.5rem; */
-}
-.company_brief{
+
+
+.company_brief {
     font-weight: 400;
     font-size: 12px;
     width: 96%;
     margin-top: 1.2rem;
 }
-.stats{
+
+.stats {
     margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
 }
-.up_stats{
+
+.up_stats {
     display: flex;
     justify-content: space-between;
     width: 26rem;
 }
-.stat_per{
+
+.stat_per {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
     color: #FF2C3A;
 }
-.stat1{
+
+.stat1 {
     width: 11rem;
 }
-.stat2{
+
+.stat2 {
     margin-top: 1.5rem;
     display: flex;
     width: 80%;
     justify-content: space-between;
     align-items: center;
 }
-.stat_brief, .stat_brief2{
+
+.stat_brief,
+.stat_brief2 {
     font-size: 11px;
     display: flex;
     width: 70%;
     font-weight: 400;
     font-size: 11px;
 }
-.stat_brief{
+
+.stat_brief {
     width: 100%;
 }
-.landing_right{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 91%;
+
+/* .landing-right {
+    width: 55rem;
+    height: 20rem;
+} */
+
+.landing-slider {
+    width: 35rem;
+    height: 20rem;
+    margin: auto;
+    box-shadow: 0 0 3px grey;
+    position: relative;
+
+    /* IN THE END */
+    /* overflow: hidden; */
+}
+
+.slide {
+    position: absolute;
     width: 100%;
-    align-items: flex-end;
+    height: 100%;
+    transition: 1s;
 }
-.landing_right_up{
+
+.slide>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* .dots {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
-.box{
+
+.dots__dot {
+    border: none;
+    background-color: #b9b9b9;
+    opacity: 0.7;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    margin-right: 1.75rem;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    /* Only necessary when overlying images */
+/* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); 
+}
+
+.dots__dot:last-child {
+    margin: 0;
+}
+
+.dots__dot--active {
+    background-color: #fff;
+    background-color: #888;
+    opacity: 1;
+}
+
+*/
+.box {
     width: 28rem;
     border-radius: 1rem;
     height: 19rem;
-    background-color: #0085FF;
+    object-fit: cover;
+    /* background-color: #0085FF; */
     /* margin-bottom: 2rem; */
 }
-.carousal_nav{
+
+.landing-img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousal_nav {
     margin: 0 0 0 2rem;
     display: flex;
     flex-direction: column;
 }
-.col_pin{
+
+.col_pin {
     position: absolute;
     display: flex;
     align-items: center;
     right: 18%;
     top: 70.5%;
 }
-.zero_one{
+
+.zero_one {
     font-weight: 700;
     font-size: 80px;
     color: #FFB9BE;
 }
-.the_colo{
+
+.the_colo {
     width: 11rem;
     height: 2.7rem;
     font-weight: 400;
@@ -297,7 +399,8 @@
     right: 19%;
     color: #222222;
 }
-.pin_sch{
+
+.pin_sch {
     position: absolute;
     font-weight: 400;
     font-size: 14px;
@@ -305,32 +408,38 @@
     right: 36.1%;
     top: 60.3%;
 }
-.landing_below{
+
+.landing_below {
     display: flex;
     width: 100%;
     justify-content: center;
 }
-.landing_below_content{
+
+.landing_below_content {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     width: 88vw;
 }
-.landing_end_line{
+
+.landing_end_line {
     width: 60%;
     /* margin-right: 6vw;      */
     height: 0.1px;
     background-color: #747474;
 }
-.ren_wor{
+
+.ren_wor {
     font-weight: 400;
     font-size: 8px;
     letter-spacing: 0.16em;
 }
-.ren_reno{
+
+.ren_reno {
     color: #FF2C3A;
 }
-.ellipse1{
+
+.ellipse1 {
     position: absolute;
     top: 72%;
     z-index: -1;
@@ -338,26 +447,30 @@
 
 
 /* Services Offered */
-.services_offered{
+.services_offered {
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
 }
-.ser_off_title{
+
+.ser_off_title {
     font-weight: 700;
     font-size: 32px;
     color: #FF2C3A;
 }
-.ser_off_socials{
+
+.ser_off_socials {
     display: flex;
     gap: 0.5rem;
 }
-.ser_off_right{
+
+.ser_off_right {
     color: #959595;
 }
-.services_offered_whole{
+
+.services_offered_whole {
     display: flex;
     width: 88vw;
     height: 100%;
@@ -365,7 +478,8 @@
     justify-content: space-between;
     margin-top: 2rem;
 }
-.ser_off_line_socials{
+
+.ser_off_line_socials {
     display: flex;
     align-items: center;
     position: absolute;
@@ -373,34 +487,40 @@
     left: -5rem;
     top: 117%;
 }
-.services_offered_line{
+
+.services_offered_line {
     /* position: absolute; */
     width: 13rem;
     height: 1px;
     background-color: #EDEDED;
     /* rotate: 90deg; */
 }
-.ser_off_ic{
+
+.ser_off_ic {
     rotate: -90deg;
 }
-.ellipse2{
+
+.ellipse2 {
     position: absolute;
     right: 0;
     top: 92%;
 }
-.ser_off_body{
+
+.ser_off_body {
     display: flex;
     margin-top: 4rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.ser_off_carousel{
+
+.ser_off_carousel {
     width: 20rem;
     height: 15rem;
     background-color: black;
 }
-.ser_off_textbox{
+
+.ser_off_textbox {
     margin-top: 1.2rem;
     display: flex;
     flex-direction: column;
@@ -408,13 +528,15 @@
     justify-content: center;
     width: 60%;
 }
-.conf_halls{
+
+.conf_halls {
     font-weight: 700;
     font-size: 20px;
     color: #FF2C3A;
     margin-bottom: 0.7rem;
 }
-.conf_text{
+
+.conf_text {
     color: #5C5C5C;
     font-weight: 400;
     font-size: 13px;
@@ -424,7 +546,7 @@
 
 
 /* Product Range */
-.product_range{
+.product_range {
     margin-top: 4rem;
     display: flex;
     width: 100%;
@@ -432,22 +554,26 @@
     /* align-items: center; */
     justify-content: center;
 }
-.product_range_body{
+
+.product_range_body {
     width: 72vw;
 }
-.prod_range_title{
+
+.prod_range_title {
     display: flex;
     flex-direction: column;
     font-weight: 700;
     font-size: 48px;
     color: #FF2C3A;
 }
-.prod_range_range{
+
+.prod_range_range {
     color: #959595;
     font-weight: 700;
     font-size: 32px;
 }
-.prod_range_carousel{
+
+.prod_range_carousel {
     margin-top: 2rem;
     display: flex;
     width: 80%;
@@ -455,7 +581,8 @@
     justify-content: flex-end;
     align-items: flex-end;
 }
-.prod_range_box_outer{
+
+.prod_range_box_outer {
     background: #F5F5F5;
     margin-left: 2.5rem;
     margin-top: 2rem;
@@ -465,42 +592,49 @@
     display: flex;
     align-items: flex-end;
 }
-.prod_range_box{
+
+.prod_range_box {
     width: 100%;
     display: flex;
-    align-items: center;    
+    align-items: center;
     justify-content: space-evenly;
     margin-bottom: 1rem;
 }
-.prod_range_box_body{
+
+.prod_range_box_body {
     width: 70%;
     display: flex;
     flex-direction: column;
 }
-.prod_title{
+
+.prod_title {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     color: #FF2C3A;
 }
-.prod_description{
+
+.prod_description {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
 }
-.prod_range_box_body_car_nav{
+
+.prod_range_box_body_car_nav {
     /* width: 20%; */
     height: auto;
 }
-.meshed_rectangle1{
+
+.meshed_rectangle1 {
     left: 5.7%;
     position: absolute;
     top: 174%;
     z-index: -1;
 }
-.ser_off_socials_pr{
+
+.ser_off_socials_pr {
     display: flex;
     position: absolute;
     rotate: 90deg;
@@ -508,11 +642,13 @@
     top: 237%;
     gap: 0.5rem;
 }
-.ellipse3{
+
+.ellipse3 {
     left: 0;
     top: 295%;
 }
-.ellipse4{
+
+.ellipse4 {
     top: 246%;
     left: 0;
 }
@@ -521,7 +657,7 @@
 
 
 /* Why Us */
-.why_us{
+.why_us {
     display: flex;
     margin-top: 5rem;
     width: 100%;
@@ -530,19 +666,22 @@
     background: #FF2C3A;
     clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
 }
-.why_us_body{
+
+.why_us_body {
     width: 80vw;
     height: 61vh;
     display: flex;
 }
-.why_us_title{
+
+.why_us_title {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     color: #FFFFFF;
 }
-.why_us_content{
+
+.why_us_content {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
@@ -550,14 +689,16 @@
     height: 55%;
     justify-content: space-between;
 }
-.why_us_ic{
+
+.why_us_ic {
     display: flex;
     flex-direction: column;
     width: 6rem;
     align-items: center;
     justify-content: center;
 }
-.why_us_ic_text{
+
+.why_us_ic_text {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
@@ -565,23 +706,27 @@
     color: #FFFFFF;
     text-align: center;
 }
-.why_us_ico_desc{
+
+.why_us_ico_desc {
     display: flex;
     width: 80vw;
     justify-content: space-around;
 }
-.ellipse5{
+
+.ellipse5 {
     top: 243%;
     right: 0;
 }
-.eco_frip{
+
+.eco_frip {
     display: flex;
     width: 100%;
     justify-content: center;
     height: 45vh;
     align-items: center;
 }
-.eco_frip_body{
+
+.eco_frip_body {
     display: flex;
     justify-content: space-around;
     width: 92vw;
@@ -589,7 +734,8 @@
     align-items: flex-start;
     flex-wrap: wrap;
 }
-.eco_frip_title{
+
+.eco_frip_title {
     display: flex;
     font-family: 'Ubuntu';
     font-style: normal;
@@ -602,23 +748,27 @@
     top: 311%;
     right: 4rem;
 }
-.eco_ico_box{
+
+.eco_ico_box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.eco_ico_img{
+
+.eco_ico_img {
     width: 173px;
     height: 121px;
     background: #FF2C3A;
     display: flex;
     justify-content: center;
 }
-.eco_ico{
+
+.eco_ico {
     width: 4rem;
 }
-.eco_txt{
+
+.eco_txt {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
@@ -627,25 +777,28 @@
     text-align: center;
     color: black;
 }
-.meshed_rectangle2{
+
+.meshed_rectangle2 {
     position: absolute;
     top: 337%;
     left: 0;
 }
-.meshed_rectangle3{
+
+.meshed_rectangle3 {
     z-index: -1;
     position: absolute;
     right: 4rem;
     top: 334%;
 }
 
-.c_rev{
+.c_rev {
     margin-top: 3.5rem;
     display: flex;
     width: 100%;
     justify-content: center;
 }
-.c_rev_body{
+
+.c_rev_body {
     display: flex;
     width: 88vw;
     height: 68vh;
@@ -654,12 +807,14 @@
     align-items: center;
     justify-content: space-around;
 }
-.ellipse_dec1{
+
+.ellipse_dec1 {
     position: absolute;
     top: 364.5%;
     left: 20%;
 }
-.c_rev_title{
+
+.c_rev_title {
     color: #FF878F;
     font-family: 'Ubuntu';
     font-style: normal;
@@ -667,7 +822,8 @@
     font-size: 48px;
     width: 21rem;
 }
-.c_rev_title_middle{
+
+.c_rev_title_middle {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
