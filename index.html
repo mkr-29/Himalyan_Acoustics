@@ -85,9 +85,9 @@
       <!-- Navigation links -->
       <div class="navlinks">
         <a onclick="winsSroll(0)" class="home_nav navlink">HOME</a>
-        <a onclick="scroll_to_id('prod_range');" class="products_nav navlink">PRODUCTS</a>
-        <a onclick="scroll_to_id('why-us')" class="about_us_nav navlink">ABOUT US</a>
-        <a onclick="scroll_to_id('con_us')" class="contact_nav navlink">CONTACT</a>
+        <a onclick="smooth_scroll_to_id('prod_range');" class="products_nav navlink">PRODUCTS</a>
+        <a onclick="smooth_scroll_to_id('why-us')" class="about_us_nav navlink">ABOUT US</a>
+        <a onclick="smooth_scroll_to_id('con_us')" class="contact_nav navlink">CONTACT</a>
       </div>
     </div>
   </div>
@@ -96,6 +96,10 @@
     function scroll_to_id(id) {
       var elmnt = document.getElementById(id);
       elmnt.scrollIntoView();
+    }
+    function smooth_scroll_to_id(id) {
+      var elmnt = document.getElementById(id);
+      elmnt.scrollIntoView({ behavior: "smooth" });
     }
   </script>
 
@@ -180,14 +184,14 @@
           </div>
         </div>
         <div class="landing-slider-navigation">
-          <button class="landing-carousel-btn btn-prev">
-            &uarr;
+          <button class="landing-carousel-btn">
+            <img src="Icons/icon _keyboard arrow down_.svg" alt="" class="btn-prev">
           </button>
           <div class="dots">
             <!-- Dots code inserted through JS -->
           </div>
-          <button class="landing-carousel-btn btn-next">
-            &darr;
+          <button class="landing-carousel-btn">
+            <img src="Icons/icon _keyboard arrow down_.svg" alt="" class="btn-next">
           </button>
         </div>
       </div>
