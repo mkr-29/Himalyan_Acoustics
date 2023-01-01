@@ -84,18 +84,18 @@
 
       <!-- Navigation links -->
       <div class="navlinks">
-        <a onclick="scrollWin(0)" class="home_nav navlink">HOME</a>
-        <a onclick="scrollWin(1120)" class="products_nav navlink">PRODUCTS</a>
-        <a onclick="scrollWin(1835)" class="about_us_nav navlink">ABOUT US</a>
-        <a onclick="scrollWin(3790)" class="contact_nav navlink">CONTACT</a>
+        <a onclick="winsSroll(0)" class="home_nav navlink">HOME</a>
+        <a onclick="scroll_to_id('prod_range');" class="products_nav navlink">PRODUCTS</a>
+        <a onclick="scroll_to_id('why-us')" class="about_us_nav navlink">ABOUT US</a>
+        <a onclick="scroll_to_id('con_us')" class="contact_nav navlink">CONTACT</a>
       </div>
     </div>
   </div>
 
   <script>
-    function scrollWin(y) {
-      window.scrollTo(0,y);
-      
+    function scroll_to_id(id) {
+      var elmnt = document.getElementById(id);
+      elmnt.scrollIntoView();
     }
   </script>
 
@@ -260,7 +260,7 @@
 
   <!-- Product Range -->
 
-  <div class="product_range">
+  <div class="product_range" id="prod_range">
     <img src="Assets/Ornaments/meshed_rectangle1.svg" alt="" class="meshed_rectangle1" />
 
     <div class="ser_off_socials_pr">
@@ -311,7 +311,7 @@
 
   <!-- Why Us -->
 
-  <div class="why_us">
+  <div class="why_us" id="why-us">
     <img src="Assets/Ornaments/ellipse4.svg" alt="" class="ellipse1 ellipse4" />
     <img src="Assets/Ornaments/ellipse3.svg" alt="" class="ellipse1 ellipse3" />
 
@@ -503,7 +503,7 @@
   </div>
 
   <!-- Contact Us -->
-  <div class="contact-us">
+  <div class="contact-us" id="con_us">
     <h1 class="contact-heading">Contact Us</h1>
     <div class="contact-wrapper">
       <div class="contact-details">
