@@ -138,6 +138,7 @@ body {
     font-size: 13px;
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
 .home_nav {

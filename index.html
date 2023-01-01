@@ -84,14 +84,20 @@
 
       <!-- Navigation links -->
       <div class="navlinks">
-        <a href="/" class="home_nav navlink">HOME</a>
-        <a href="/" class="products_nav navlink">PRODUCTS</a>
-        <a href="/" class="about_us_nav navlink">ABOUT US</a>
-        <a href="/" class="contact_nav navlink">CONTACT</a>
+        <a onclick="scrollWin(0)" class="home_nav navlink">HOME</a>
+        <a onclick="scrollWin(1120)" class="products_nav navlink">PRODUCTS</a>
+        <a onclick="scrollWin(1835)" class="about_us_nav navlink">ABOUT US</a>
+        <a onclick="scrollWin(3790)" class="contact_nav navlink">CONTACT</a>
       </div>
     </div>
   </div>
 
+  <script>
+    function scrollWin(y) {
+      window.scrollTo(0,y);
+      
+    }
+  </script>
 
   <!-- Header ends -->
 
@@ -117,7 +123,7 @@
             <img class="arror_fwd_ico" src="Icons/icon _arrow_forward_.svg" alt="" /></a>
           or
           <div class="chat_ctc">
-            <a href="/" class="whatsapp">Let's have a Chat!!</a>
+            <a href="https://wa.me/+919779512233" class="whatsapp">Let's have a Chat!!</a>
             <img class="wh_ico" src="Icons/whtsp.svg" />
           </div>
         </div>
@@ -613,19 +619,7 @@
   </footer>
 
   <!-- JavaScript File -->
-
-  <script>
-    function myMap() {
-      var mapProp = {
-        center: new google.maps.LatLng(51.508742, -0.120850),
-        zoom: 5,
-      };
-      var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-    }
-  </script>
-
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
-</body>
-<script src="JS/script.js"></script>
+  
+  <script src="JS/script.js"></script>
 
 </html>
