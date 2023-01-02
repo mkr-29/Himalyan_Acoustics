@@ -1,4 +1,24 @@
 /* Media Query for Desktops and Laptops */
+@media screen and (min-width: 1400px){
+  .prod_range-slider {
+    top: 78.2rem;
+    left: 21.1rem;
+  }
+}
+@media screen and (max-width: 1400px){
+  .prod_range-slider {
+    top: 77.2rem;
+    left: 19.9rem;
+  }
+}
+@media screen and (max-width: 1300px){
+  .prod_range-slider {
+    width: 29.7rem;
+    height: 24.4rem;
+    top: 75.3rem;
+    left: 18.5rem;
+  }
+}
 @media screen and (min-width: 1200px){
   .head_up_left {
     font-size: 0.85rem;
@@ -113,11 +133,17 @@
     width: 38.7rem;
     height: 24.3rem;
   }
+}
+@media screen and (max-width: 1100px) {
   .prod_range-slider {
-    width: 36.3rem;
-    height: 24.4rem;
-    top: 78rem;
-    left: 21.5rem;
+    top: 73.6rem;
+    left: 16.8rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .prod_range-slider {
+    top: 71.6rem;
+    left: 15rem;
   }
 }
 
@@ -176,7 +202,7 @@
     left: 41%;
   }
   .eco_frip_title {
-    top: 182.2rem;
+    top: 173.2rem;
     font-size: 40px;
     width: 20rem;
   }
@@ -252,12 +278,12 @@
     flex-wrap: wrap;
   }
   .eco_frip {
-    height: 39rem;
+    height: 100%;
   }
   .eco_frip_body {
     width: 80vw;
     gap: 2rem;
-    height: 60vh;
+    height: 100%;
   }
   .meshed_rectangle2 {
     top: 184.7rem;
@@ -299,7 +325,6 @@
   }
   .googleMap, .map {
     width: 100%;
-    height: 50vh;
   }
   .from-owner {
     margin-top: 9rem;
@@ -311,12 +336,12 @@
     display: none;
   }
   .prod_range-slider {
-    top: 107.2rem;
-    left: 12rem;
+    top: 99rem;
+    left: 11.7rem;
   }
   .prod_range_carousel {
     margin-top: 6rem;
-    width: 41rem;
+    width: 100%;
     height: 26rem;
   }
   .prod_range_box_body {
@@ -348,7 +373,7 @@
     top: 177.5rem;
   }
   .eco_frip_title {
-    top: 183rem;
+    top: 179rem;
   }
   .prime-partners {
     height: 118vh;
@@ -389,7 +414,7 @@
   }
   .prod_range-slider {
     height: 21rem;
-    top: 113.2rem;
+    top: 103.7rem;
     left: 8.2rem;
     width: 26.8rem;
   }
@@ -456,7 +481,7 @@
     rotate: 90deg
   }
   .prod_range-slider {
-    top: 110.2rem;
+    top: 101.2rem;
     left: 7.2rem;
     height: 18rem;
     width: 24rem;
@@ -479,7 +504,10 @@
     width: 25rem;
     height: 18rem;
   }
-
+  .eco_frip_title {
+    top: 173rem;
+    right: 12px;
+  }
 }
 @media screen and (max-width: 500px) {
   .head_main {
@@ -544,7 +572,7 @@
     top: 390.5rem;
   }
   .prod_range-slider {
-    top: 111.6rem;
+    top: 101rem;
   }
 }
 @media screen and (max-width: 460px) {
