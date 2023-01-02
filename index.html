@@ -84,14 +84,28 @@
 
       <!-- Navigation links -->
       <div class="navlinks">
-        <a href="/" class="home_nav navlink">HOME</a>
-        <a href="/" class="products_nav navlink">PRODUCTS</a>
-        <a href="/" class="about_us_nav navlink">ABOUT US</a>
-        <a href="/" class="contact_nav navlink">CONTACT</a>
+        <a onclick="scroll_to_top()" class="home_nav navlink">HOME</a>
+        <a onclick="smooth_scroll_to_id('prod_range');" class="products_nav navlink">PRODUCTS</a>
+        <a onclick="smooth_scroll_to_id('why-us')" class="about_us_nav navlink">ABOUT US</a>
+        <a onclick="smooth_scroll_to_id('con_us')" class="contact_nav navlink">CONTACT</a>
       </div>
     </div>
   </div>
 
+  <script>
+    function scroll_to_top() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    function scroll_to_id(id) {
+      var elmnt = document.getElementById(id);
+      elmnt.scrollIntoView();
+    }
+    function smooth_scroll_to_id(id) {
+      var elmnt = document.getElementById(id);
+      elmnt.scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
 
   <!-- Header ends -->
 
@@ -117,7 +131,7 @@
             <img class="arror_fwd_ico" src="Icons/icon _arrow_forward_.svg" alt="" /></a>
           or
           <div class="chat_ctc">
-            <a href="/" class="whatsapp">Let's have a Chat!!</a>
+            <a href="https://wa.me/+919779512233" class="whatsapp">Let's have a Chat!!</a>
             <img class="wh_ico" src="Icons/whtsp.svg" />
           </div>
         </div>
@@ -166,29 +180,27 @@
           </div>
           <div class="slide">
             <img src="./Assets/Images/prod1.svg" alt="auditorium">
-            <!-- <img src="./Assets/Images/auditorium1.svg" alt="auditorium"> -->
           </div>
           <div class="slide">
-            <!-- <img src="./Assets/Images/auditorium1.svg" alt="auditorium"> -->
             <img src="./Assets/Images/prod2.svg" alt="auditorium">
           </div>
         </div>
         <div class="landing-slider-navigation">
-          <button class="landing-carousel-btn btn-prev">
-            &uarr;
+          <button class="landing-carousel-btn">
+            <img src="Icons/icon _keyboard arrow down_.svg" alt="" class="btn-prev">
           </button>
           <div class="dots">
             <!-- Dots code inserted through JS -->
           </div>
-          <button class="landing-carousel-btn btn-next">
-            &darr;
+          <button class="landing-carousel-btn">
+            <img src="Icons/icon _keyboard arrow down_.svg" alt="" class="btn-next">
           </button>
         </div>
       </div>
 
     </div>
   </div>
-  <!-- Landing line -->
+
   <div class="landing_below">
     <div class="landing_below_content">
       <span class="ren_wor">OUR <span class="ren_reno">RENOWNED</span> WORKS</span>
@@ -204,11 +216,16 @@
   <!-- Services Offered -->
 
   <div class="services_offered">
+
+    <!-- ornament -->
     <img src="Assets/Ornaments/ellipse2svg.svg" alt="" class="ellipse2" />
 
     <div class="services_offered_whole">
+
+      <!-- Title -->
       <span class="ser_off_title">Services <span class="ser_off_right">Offered</span></span>
 
+      <!-- socials ornament -->
       <div class="ser_off_line_socials">
         <div class="services_offered_line"></div>
 
@@ -220,6 +237,7 @@
         </div>
       </div>
 
+      <!-- Body -->
       <div class="ser_off_body">
         <div class="ser_off_carousel">
           <div class="image-wrapper">
@@ -254,9 +272,10 @@
 
   <!-- Product Range -->
 
-  <div class="product_range">
+  <div class="product_range" id="prod_range">
     <img src="Assets/Ornaments/meshed_rectangle1.svg" alt="" class="meshed_rectangle1" />
 
+    <!-- social ornament -->
     <div class="ser_off_socials_pr">
       <a href=""><img class="ser_off_ic" src="Icons/icon _facebook_.svg" alt="" /></a>
       <a href=""><img class="ser_off_ic" src="Icons/icon _linkedin.svg" alt="" /></a>
@@ -264,11 +283,16 @@
       <a href=""><img class="ser_off_ic" src="Icons/icon _instagram.svg" alt="" /></a>
     </div>
 
+    <!-- body -->
     <div class="product_range_body">
+
+      <!-- title -->
       <span class="prod_range_title">Product<span class="prod_range_range">Range</span></span>
 
       <div class="prod_range_carousel">
         <div class="prod_range_box_outer">
+
+          <!-- slider -->
           <div class="prod_range-slider">
             <div class="product-slide">
               <img src="./Assets/Images/prod1.svg" alt="Product-1">
@@ -280,6 +304,8 @@
               <img src="./Assets/Images/prod1.svg" alt="Product-3">
             </div>
           </div>
+
+          <!-- slider Info -->
           <div class="prod_range_box">
             <div class="prod_range_box_body">
               <span class="prod_title">Wooden Flooring</span>
@@ -289,6 +315,7 @@
               </span>
             </div>
 
+            <!-- slider navigation -->
             <div class="prod_range_box_body_car_nav">
               <button class="prod-arrow product-btn-prev">
                 <img src="Assets/Ornaments/icon _arrow_back.svg" alt="" />
@@ -305,15 +332,22 @@
 
   <!-- Why Us -->
 
-  <div class="why_us">
+  <div class="why_us" id="why-us">
+
+    <!-- Ornaments -->
     <img src="Assets/Ornaments/ellipse4.svg" alt="" class="ellipse1 ellipse4" />
     <img src="Assets/Ornaments/ellipse3.svg" alt="" class="ellipse1 ellipse3" />
 
+    <!-- Body -->
     <div class="why_us_body">
       <div class="why_us_content">
+
+        <!-- Title -->
         <span class="why_us_title">Why Us?</span>
 
         <div class="why_us_ico_desc">
+
+          <!-- Icons with info -->
           <div class="why_us_ic">
             <img class="why_us_ic_i" src="Assets/Ornaments/icon _house_.svg" alt="" />
             <span class="why_us_ic_text">In-House Manufacturing</span>
@@ -334,9 +368,11 @@
             <img class="why_us_ic_i" src="Assets/Ornaments/icon _architecture_.svg" alt="" />
             <span class="why_us_ic_text">Top Advisors committee</span>
           </div>
+
         </div>
       </div>
 
+      <!-- Ornament -->
       <img src="Assets/Ornaments/ellipse5.svg" alt="" class="ellipse1 ellipse5" />
     </div>
   </div>
@@ -344,8 +380,11 @@
   <!-- Our Ecofriendly Practices -->
   <div class="eco_frip">
     <div class="eco_frip_body">
+
+      <!-- Title -->
       <span class="eco_frip_title">Our EcoFriendly Practices</span>
 
+      <!-- Icons with info -->
       <div class="eco_ico_box">
         <div class="eco_ico_img">
           <img src="Assets/Ornaments/ico_indoor_air.svg" alt="" class="eco_ico" />
@@ -380,8 +419,10 @@
         </div>
         <span class="eco_txt">Non-Toxic Flame</span>
       </div>
+
     </div>
 
+    <!-- Ornaments -->
     <img src="Assets/Ornaments/meshed_rectangle2.svg" alt="" class="meshed_rectangle2">
     <img src="Assets/Ornaments/meshed_rectangle3.svg" alt="" class="meshed_rectangle3">
   </div>
@@ -391,21 +432,33 @@
 
   <div class="c_rev">
 
+    <!-- Ornament -->
     <img src="Assets/Ornaments/eclipse_dec1.svg" alt="" class="ellipse_dec1">
+    
+    <!-- Body -->
     <div class="c_rev_body">
 
+      <!-- Title -->
       <span class="c_rev_title">WHAT <br class="c_rev_br1" /><span class="c_rev_title_middle">OUR CLIENTS</span><br
           class="c_rev_br1" /> SAY</span>
 
       <div class="c_reviews">
+
+        <!-- Review No -->
         <div class="c_rev_serial">01. <span class="c_ser_uline"></span></div>
+
+        <!-- Review -->
         <div class="c_rev_review">
           “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magn aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat.”
         </div>
+
+        <!-- Client Info -->
         <div class="c_rev_name">Name of Client</div>
         <div class="c_rev_designation">Designation</div>
+
+        <!-- Navigation -->
         <div class="c_rev_carousel">
           <div class="c_car_up">
             <div class="c_car_upu">
@@ -423,7 +476,6 @@
 
     </div>
 
-
   </div>
 
 
@@ -431,7 +483,11 @@
   <!-- Our prime partners -->
 
   <div class="prime-partners">
+
+    <!-- Title -->
     <h1 class="p_part_head">Our Prime Partners</h1>
+
+    <!-- Partners -->
     <div class="partners">
       <div class="accenture">
         <p>Accenture</p>
@@ -497,30 +553,41 @@
   </div>
 
   <!-- Contact Us -->
-  <div class="contact-us">
+  <div class="contact-us" id="con_us">
+
+    <!-- Title -->
     <h1 class="contact-heading">Contact Us</h1>
     <div class="contact-wrapper">
       <div class="contact-details">
         <div class="contact-red">
 
+          <!-- Ornament -->
           <img src="Assets/Ornaments/ellipse6.svg" alt="" class="ellipse6">
 
+          <!-- Contact Box -->
           <div class="contact_red_in">
+
+            <!-- Upper Left component of Contact Box -->
             <div class="contact-box">
               <h3 class="con_office_head">Office</h3>
               <p class="con_office_body">Lorem ipsum dolor<br>sit, amet consectetur adipisicing elit,<br>sed do eiusmod
                 tempor</p>
               <p class="con_phone">+91 58739 29375</p>
             </div>
+
+            <!-- Lower Right component of Contact Box -->
             <div class="contact-box">
               <h3 class="con_office_head">Contact</h3>
               <p class="con_office_body">Lorem ipsum dolor<br>sit, amet consectetur adipisicing elit,<br>sed do eiusmod
                 tempor</p>
               <p>+91 58739 29375</p>
             </div>
+
           </div>
 
         </div>
+
+        <!-- Social Media Icons -->
         <div class="contact-bottom">
 
           <div class="ser_off_socials con_socials">
@@ -533,12 +600,13 @@
           <h1 class="coffee">Let's have a<br class="con_coffee" /> Coffee!!</h1>
         </div>
       </div>
+
+      <!-- Map -->
       <div class="googleMap">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3423.58410856525!2d77.0155295!3d30.898293400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f861ec55fbd51%3A0x8926e9ba2d5ea502!2sAcoustics-%20Himalyan%20Acoustics%20India!5e0!3m2!1sen!2sin!4v1672407250878!5m2!1sen!2sin"
           width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <!-- <img src="Assets/Images/map.svg" class="map" alt="" /> -->
       </div>
     </div>
   </div>
@@ -547,14 +615,20 @@
 
   <div class="from-owner">
 
+    <!-- Ornament -->
     <span class="from_owner_orn">‘</span>
 
+    <!-- Body -->
     <div class="from_owner_body">
 
+      <!-- Image -->
       <div class="owner-img">
         <img src="Assets/Images/owner.svg" class="owner-pic" />
       </div>
+
+      <!-- Quote -->
       <div class="owner-quote">
+        
         <h1 class="owner_fro">From the Owner</h1>
         <p class="owner_frqu">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo<br>empor incididunt ut labore et dolore
@@ -563,9 +637,13 @@
           incididunt ut labore et dolore maa. Ut enim ad<br>minim veniam, quis nostrud exercitation ullamco laboris nisi
           ut aliqu<br>ip ex ea commodo consequat. Duis aute irure dolor i
         </p>
+
+        <!-- Signature -->
         <div class="owner-signature">
           <img src="Assets/Images/Signature.svg" alt="" />
         </div>
+
+        <!-- Name -->
         <p>Mr. First Name and Last Name</p>
       </div>
 
@@ -578,25 +656,30 @@
   <!-- Footer -->
 
   <footer class="footer">
+
+    <!-- Logo -->
     <h1 class="footer_head">
       Himalayan
       <strong class="footer_head_r"> Acoustics </strong>
     </h1>
+
+    <!-- Links -->
     <div class="flinks">
-      <a href="/" class="foot_link">
+      <a onclick="scroll_to_top()" class="foot_link">
         Home
       </a>
-      <a href="/" class="foot_link">
+      <a onclick="smooth_scroll_to_id('prod_range');" class="foot_link">
         Products
       </a>
-      <a href="/" class="foot_link">
+      <a onclick="smooth_scroll_to_id('why-us')" class="foot_link">
         About Us
       </a>
-      <a href="/" class="foot_link">
+      <a onclick="smooth_scroll_to_id('con_us')" class="foot_link">
         Contact
       </a>
     </div>
 
+    <!-- Social Media Icons -->
     <div class="ser_off_socials con_socials footer-social_icons">
       <a href=""><img class="con_ic" src="Icons/icon _facebook_.svg" alt="" /></a>
       <a href=""><img class="con_ic" src="Icons/icon _linkedin.svg" alt="" /></a>
@@ -604,7 +687,7 @@
       <a href=""><img class="con_ic" src="Icons/icon _instagram.svg" alt="" /></a>
     </div>
 
-
+    <!-- Contact -->
     <div class="footer-contact">username@email.com | +91 452 482 5615</div>
     <div class="footer-copyright">
       © 2022 Himalyan Accounts (Kool Pack and Allied Industries) • All Rights
@@ -613,19 +696,7 @@
   </footer>
 
   <!-- JavaScript File -->
-
-  <script>
-    function myMap() {
-      var mapProp = {
-        center: new google.maps.LatLng(51.508742, -0.120850),
-        zoom: 5,
-      };
-      var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-    }
-  </script>
-
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
-</body>
-<script src="JS/script.js"></script>
+  
+  <script src="JS/script.js"></script>
 
 </html>

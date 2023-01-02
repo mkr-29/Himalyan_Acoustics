@@ -71,7 +71,7 @@ let curImage = imageItems[1];
 const imageLength = imageItems.length
 const perView = 3
 let totalScroll = 0
-const delay = 1000
+const delay = 5000
 
 imageWrapper.style.setProperty('--per-view', perView)
 for (let i = 0; i < perView; i++) {
@@ -92,7 +92,7 @@ function scrolling() {
   }
   const widthEl = document.querySelector('.image-wrapper > :first-child').offsetWidth + 24
   imageWrapper.style.left = `-${totalScroll * widthEl}px`
-  imageWrapper.style.transition = '.3s'
+  imageWrapper.style.transition = '0.5s'
 }
 
 
