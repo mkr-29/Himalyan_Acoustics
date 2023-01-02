@@ -64,14 +64,46 @@ btnPrev.addEventListener('click', function () {
 });
 
 
+//Services Offered Carousel
+const imageWrapper = document.querySelector('.image-wrapper')
+const imageItems = document.querySelectorAll('.image-wrapper > *')
+let curImage = imageItems[1];
+const imageLength = imageItems.length
+const perView = 3
+let totalScroll = 0
+const delay = 1000
+
+imageWrapper.style.setProperty('--per-view', perView)
+for (let i = 0; i < perView; i++) {
+  imageWrapper.insertAdjacentHTML('beforeend', imageItems[i].outerHTML)
+  curImage.classList.toggle('.img-active');
+}
+
+let autoScroll = setInterval(scrolling, delay)
+
+function scrolling() {
+  totalScroll++
+  if (totalScroll == imageLength + 1) {
+    clearInterval(autoScroll)
+    totalScroll = 1
+    imageWrapper.style.transition = '0s'
+    imageWrapper.style.left = '0'
+    autoScroll = setInterval(scrolling, delay)
+  }
+  const widthEl = document.querySelector('.image-wrapper > :first-child').offsetWidth + 24
+  imageWrapper.style.left = `-${totalScroll * widthEl}px`
+  imageWrapper.style.transition = '.3s'
+}
+
+
 //Product Slider
 const productSlides = document.querySelectorAll('.product-slide');
 const productBtnPrev = document.querySelector('.product-btn-prev');
 const productBtnNext = document.querySelector('.product-btn-next');
 
-const prodMaxSlide = productSlides.length
+const prodMaxSlide = productSlides.length;
 
-var productSlideCounter = 0;
+let productSlideCounter = 0;
 
 productSlides.forEach(
   (prodSlide, prodIndex) => {
