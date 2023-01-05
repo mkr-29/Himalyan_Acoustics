@@ -37,7 +37,7 @@ body {
     border: 15px solid #DDDDDD;
     border-top-color: #FF2C3A;
     border-radius: 50%;
-    animation: loading 2.75s ease infinite;
+    animation: loading 0.75s ease infinite;
 }
 
 @keyframes loading {
