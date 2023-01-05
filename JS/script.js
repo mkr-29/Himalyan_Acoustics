@@ -8,6 +8,22 @@ const maxSlide = slides.length;
 let curSlide = 0;
 var counter = 0;
 
+landingCount = document.getElementById('landing-image-count');
+landingTitle = document.getElementById('landing-title');
+landingInfo = document.getElementById('landing-info');
+
+var titles = [
+  "The Colosseum",
+  "Wooden Tiles",
+  "False Ceiling",
+]
+
+var info = [
+  "Pinegrove School",
+  "Dummy Text",
+  "Dummy Text",
+]
+
 slides.forEach((s, i) => (s.style.transform = `translateY(${100 * i}%)`));
 
 
@@ -43,6 +59,11 @@ const goToSlide = function (slide) {
   slides.forEach((s, i) => (s.style.transform = `translateY(${100 * (i - slide)}%)`));
 
 };
+const updateLandingData = function () {
+  landingCount.innerHTML = `0${curSlide + 1}`;
+  landingTitle.innerHTML = titles[curSlide];
+  landingInfo.innerHTML = info[curSlide];
+}
 btnNext.addEventListener('click', function () {
   if (curSlide == maxSlide - 1) {
     curSlide = 0;
@@ -51,6 +72,7 @@ btnNext.addEventListener('click', function () {
   }
   goToSlide(curSlide);
   activateDot(curSlide);
+  updateLandingData();
 });
 
 btnPrev.addEventListener('click', function () {
@@ -61,6 +83,7 @@ btnPrev.addEventListener('click', function () {
   }
   goToSlide(curSlide);
   activateDot(curSlide);
+  updateLandingData();
 });
 
 
@@ -103,6 +126,21 @@ const productBtnNext = document.querySelector('.product-btn-next');
 
 const prodMaxSlide = productSlides.length;
 
+productTitle = document.getElementById('product-title');
+productInfo = document.getElementById('product-info');
+
+var products = [
+  "Wooden Flooring",
+  "False Ceiling",
+  "Wooden Tiles"
+]
+
+var productDesc = [
+  "Lorem ipsum dolor sit amet\, consectetur adipiscing elit\,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation",
+  "Lorem ipum dolor sit amet\, consectetur adipiscing elit\,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation",
+  "Lorem ipsiuum dol sit amet\, consectetur adipiscing elit\,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation",
+]
+
 let productSlideCounter = 0;
 
 productSlides.forEach(
@@ -110,6 +148,11 @@ productSlides.forEach(
     prodSlide.style.left = `${prodIndex * 110}%`
   }
 );
+
+const updateProductInfo = function () {
+  productTitle.innerHTML = products[productSlideCounter];
+  productInfo.innerHTML = productDesc[productSlideCounter];
+}
 
 const prodSlideImage = function () {
   productSlides.forEach(
@@ -125,6 +168,7 @@ const goProdNext = function () {
     productSlideCounter = 0;
   }
   prodSlideImage();
+  updateProductInfo();
 }
 productBtnNext.addEventListener('click', goProdNext);
 
@@ -135,5 +179,57 @@ const goProdPrev = function () {
     productSlideCounter = prodMaxSlide - 1;
   }
   prodSlideImage();
+  updateProductInfo();
 }
 productBtnPrev.addEventListener('click', goProdPrev);
+
+
+//Reviews Slider
+const reviewSlides = document.querySelectorAll('.c_review');
+const reviewBtnPrev = document.querySelector('.review-btn-prev');
+const reviewBtnNext = document.querySelector('.review-btn-next');
+
+reviewCount = document.getElementById('review-count');
+
+const reviewMaxSlide = reviewSlides.length;
+
+let reviewSlideCounter = 0;
+
+reviewSlides.forEach(
+  (reviewSlide, reviewIndex) => {
+    reviewSlide.style.left = `${reviewIndex * 150}%`
+  }
+);
+
+const reviewSlideImage = function () {
+  reviewSlides.forEach(
+    (reviewSlide) => {
+      reviewSlide.style.transform = `translateX(-${reviewSlideCounter * 150}%)`
+    }
+  )
+  updateReviewCount();
+};
+
+const updateReviewCount = function () {
+  reviewCount.innerHTML = reviewSlideCounter + 1;
+};
+
+const goReviewNext = function () {
+  if (reviewSlideCounter != reviewMaxSlide - 1) {
+    reviewSlideCounter++;
+  } else {
+    reviewSlideCounter = 0;
+  }
+  reviewSlideImage();
+}
+reviewBtnNext.addEventListener('click', goReviewNext);
+
+const goReviewPrev = function () {
+  if (reviewSlideCounter != 0) {
+    reviewSlideCounter--;
+  } else {
+    reviewSlideCounter = reviewMaxSlide - 1;
+  }
+  reviewSlideImage();
+}
+reviewBtnPrev.addEventListener('click', goReviewPrev);

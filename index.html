@@ -178,27 +178,40 @@
 
       <!-- Right portion of landing page starts -->
       <div class="landing-right">
-        <div class="landing-slider">
-          <div class="slide">
-            <img src="./Assets/Images/auditorium1.svg" alt="auditorium">
+        <div class="slider">
+          <div class="landing-slider">
+            <div class="slide">
+              <img src="./Assets/Images/auditorium1.svg" alt="auditorium">
+            </div>
+            <div class="slide">
+              <img src="./Assets/Images/prod1.svg" alt="auditorium">
+            </div>
+            <div class="slide">
+              <img src="./Assets/Images/prod2.svg" alt="auditorium">
+            </div>
           </div>
-          <div class="slide">
-            <img src="./Assets/Images/prod1.svg" alt="auditorium">
-          </div>
-          <div class="slide">
-            <img src="./Assets/Images/prod2.svg" alt="auditorium">
+          <div class="landing-slider-navigation">
+            <button class="landing-carousel-btn">
+              <img src="Icons/icon _keyboard arrow down_.svg" alt="" class="btn-prev">
+            </button>
+            <div class="dots">
+              <!-- Dots code inserted through JS -->
+            </div>
+            <button class="landing-carousel-btn">
+              <img src="Icons/icon _keyboard arrow down_.svg" alt="" class="btn-next">
+            </button>
           </div>
         </div>
-        <div class="landing-slider-navigation">
-          <button class="landing-carousel-btn">
-            <img src="Icons/icon _keyboard arrow down_.svg" alt="" class="btn-prev">
-          </button>
-          <div class="dots">
-            <!-- Dots code inserted through JS -->
+        <div class="landing-slider-text">
+          <div class="landing-slider-count">
+            <p id="landing-image-count">
+              01
+            </p>
           </div>
-          <button class="landing-carousel-btn">
-            <img src="Icons/icon _keyboard arrow down_.svg" alt="" class="btn-next">
-          </button>
+          <div class="landing-slider-info">
+            <h2 style="font-weight: 400;" id="landing-title">The Colosseum</h2>
+            <h3 style="font-weight: 400;" id="landing-info">Pinegrove School</h3>
+          </div>
         </div>
       </div>
 
@@ -312,8 +325,9 @@
           <!-- slider Info -->
           <div class="prod_range_box">
             <div class="prod_range_box_body">
-              <span class="prod_title">Wooden Flooring</span>
-              <span class="prod_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              <span class="prod_title" id="product-title">Wooden Flooring</span>
+              <span class="prod_description" id="product-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation
               </span>
@@ -438,46 +452,184 @@
 
     <!-- Ornament -->
     <img src="Assets/Ornaments/eclipse_dec1.svg" alt="" class="ellipse_dec1">
-    
+
     <!-- Body -->
     <div class="c_rev_body">
 
       <!-- Title -->
       <span class="c_rev_title">WHAT <br class="c_rev_br1" /><span class="c_rev_title_middle">OUR CLIENTS</span><br
           class="c_rev_br1" /> SAY</span>
+      <div class="carousel_container">
 
-      <div class="c_reviews">
+        <div class="c_reviews">
 
-        <!-- Review No -->
-        <div class="c_rev_serial">01. <span class="c_ser_uline"></span></div>
+          <div class="c_review">
 
-        <!-- Review -->
-        <div class="c_rev_review">
-          “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magn aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.”
+
+            <!-- Review No -->
+            <div class="c_rev_serial">01. <span class="c_ser_uline"></span></div>
+
+            <!-- Review -->
+            <div class="c_rev_review">
+              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore
+              magn aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo
+              consequat.”
+            </div>
+
+            <!-- Client Info -->
+            <div class="c_rev_name">Name of Client</div>
+            <div class="c_rev_designation">Designation</div>
+
+            <!-- Navigation -->
+          </div>
+          <div class="c_review">
+
+
+            <!-- Review No -->
+            <div class="c_rev_serial">02. <span class="c_ser_uline"></span></div>
+
+            <!-- Review -->
+            <div class="c_rev_review">
+              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore
+              magn aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo
+              consequat.”
+            </div>
+
+            <!-- Client Info -->
+            <div class="c_rev_name">Name of Client</div>
+            <div class="c_rev_designation">Designation</div>
+
+            <!-- Navigation -->
+          </div>
+          <div class="c_review">
+
+
+            <!-- Review No -->
+            <div class="c_rev_serial">03. <span class="c_ser_uline"></span></div>
+
+            <!-- Review -->
+            <div class="c_rev_review">
+              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore
+              magn aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo
+              consequat.”
+            </div>
+
+            <!-- Client Info -->
+            <div class="c_rev_name">Name of Client</div>
+            <div class="c_rev_designation">Designation</div>
+
+            <!-- Navigation -->
+          </div>
+          <div class="c_review">
+
+
+            <!-- Review No -->
+            <div class="c_rev_serial">04. <span class="c_ser_uline"></span></div>
+
+            <!-- Review -->
+            <div class="c_rev_review">
+              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore
+              magn aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo
+              consequat.”
+            </div>
+
+            <!-- Client Info -->
+            <div class="c_rev_name">Name of Client</div>
+            <div class="c_rev_designation">Designation</div>
+
+            <!-- Navigation -->
+          </div>
+          <div class="c_review">
+
+
+            <!-- Review No -->
+            <div class="c_rev_serial">05. <span class="c_ser_uline"></span></div>
+
+            <!-- Review -->
+            <div class="c_rev_review">
+              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore
+              magn aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo
+              consequat.”
+            </div>
+
+            <!-- Client Info -->
+            <div class="c_rev_name">Name of Client</div>
+            <div class="c_rev_designation">Designation</div>
+
+            <!-- Navigation -->
+          </div>
+          <div class="c_review">
+
+
+            <!-- Review No -->
+            <div class="c_rev_serial">06. <span class="c_ser_uline"></span></div>
+
+            <!-- Review -->
+            <div class="c_rev_review">
+              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore
+              magn aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo
+              consequat.”
+            </div>
+
+            <!-- Client Info -->
+            <div class="c_rev_name">Name of Client</div>
+            <div class="c_rev_designation">Designation</div>
+
+            <!-- Navigation -->
+          </div>
+          <div class="c_review">
+
+
+            <!-- Review No -->
+            <div class="c_rev_serial">07. <span class="c_ser_uline"></span></div>
+
+            <!-- Review -->
+            <div class="c_rev_review">
+              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore
+              magn aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo
+              consequat.”
+            </div>
+
+            <!-- Client Info -->
+            <div class="c_rev_name">Name of Client</div>
+            <div class="c_rev_designation">Designation</div>
+
+            <!-- Navigation -->
+          </div>
+
+
         </div>
-
-        <!-- Client Info -->
-        <div class="c_rev_name">Name of Client</div>
-        <div class="c_rev_designation">Designation</div>
-
-        <!-- Navigation -->
         <div class="c_rev_carousel">
           <div class="c_car_up">
             <div class="c_car_upu">
-              <img src="Icons/icon _arrow ios back_.svg" alt=""><span class="c_caru">01</span>
+              <img class="review-btn-prev" style="cursor: pointer;" src="Icons/icon _arrow ios back_.svg" alt=""><span
+                class="c_caru" id="review-count">1</span>
+
             </div>
           </div>
           <span class="c_car_div">/</span>
           <div class="c_car_d">
-            <span class="c_card">07</span>
-            <img class="ar_fwd_cr" src="Icons/icon _arrow ios forward_.svg" alt="">
+            <span class="c_card">7</span>
+            <img class="review-btn-next" style="cursor: pointer;" class="ar_fwd_cr"
+              src="Icons/icon _arrow ios forward_.svg" alt="">
           </div>
         </div>
 
       </div>
-
     </div>
 
   </div>
@@ -632,7 +784,7 @@
 
       <!-- Quote -->
       <div class="owner-quote">
-        
+
         <h1 class="owner_fro">From the Owner</h1>
         <p class="owner_frqu">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo<br>empor incididunt ut labore et dolore
@@ -700,7 +852,7 @@
   </footer>
 
   <!-- JavaScript File -->
-  
+
   <script src="JS/script.js"></script>
 
 </html>

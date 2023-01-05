@@ -85,16 +85,19 @@ body {
     width: 88vw;
     background-color: #747474;
 }
-.car_aso{
+
+.car_aso {
     display: flex;
     justify-content: space-around;
     width: 21rem;
     margin-right: 1rem;
 }
-.car_aso a{
+
+.car_aso a {
     text-decoration: none;
     color: black;
 }
+
 .head_up_right {
     display: flex;
     width: 40rem;
@@ -306,6 +309,7 @@ body {
 
 .landing-right {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -319,6 +323,29 @@ body {
 
     /* IN THE END */
     overflow: hidden;
+}
+
+.landing-slider-text {
+    display: flex;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.landing-slider-count {
+    font-size: 5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #FFB9BE;
+    font-weight: 700;
+}
+
+.landing-slider-info>h3 {
+    margin-left: -2.3rem;
+}
+
+.slider {
+    display: flex;
 }
 
 .slide {
@@ -566,9 +593,9 @@ body {
     border-radius: 2%;
 }
 
-.serimg-active{
+.serimg-active {
     transform: scale(1.2);
-    filter:none;
+    filter: none;
 }
 
 /* IMAGE */
@@ -919,7 +946,7 @@ body {
 
 .c_rev_body {
     display: flex;
-    width: 88vw;
+    width: 85vw;
     height: 20rem;
     background: linear-gradient(235.9deg, #FF2C3A 42.66%, rgba(255, 44, 58, 0) 230.88%);
     border-radius: 5px;
@@ -950,11 +977,26 @@ body {
     color: #FFFFFF;
 }
 
-.c_reviews {
+
+.carousel_container {
     display: flex;
     flex-direction: column;
-    width: 40%;
-    height: 50%;
+    justify-content: center;
+    width: 30rem;
+    height: 20rem;
+}
+
+.c_reviews {
+    position: relative;
+    height: 10rem;
+    overflow: hidden;
+}
+
+.c_review {
+    position: absolute;
+    transition: 1s;
+    width: 100%;
+    height: 100%;
 }
 
 .c_rev_serial {
@@ -978,7 +1020,8 @@ body {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    line-height: 16px;
+    /* font-size: 14px; */
     color: white;
 }
 
@@ -1009,7 +1052,7 @@ body {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 34px;
     color: white;
 }
 
