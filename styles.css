@@ -85,10 +85,19 @@ body {
     width: 88vw;
     background-color: #747474;
 }
-
+.car_aso{
+    display: flex;
+    justify-content: space-around;
+    width: 21rem;
+    margin-right: 1rem;
+}
+.car_aso a{
+    text-decoration: none;
+    color: black;
+}
 .head_up_right {
     display: flex;
-    width: 14%;
+    width: 40rem;
     justify-content: space-between;
 }
 
@@ -245,7 +254,8 @@ body {
 .company_brief {
     font-weight: 400;
     font-size: 12px;
-    width: 90%;
+    text-align: justify;
+    width: 70%;
     margin-top: 1.2rem;
 }
 
@@ -531,7 +541,7 @@ body {
 
 .ser_off_carousel {
     overflow-x: hidden;
-    max-width: 80%;
+    max-width: 94%;
 }
 
 .image-wrapper {
@@ -553,7 +563,6 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
-    filter: blur(2px);
     border-radius: 2%;
 }
 
@@ -749,7 +758,7 @@ body {
     position: absolute;
     rotate: 90deg;
     left: 3%;
-    top: 237%;
+    top: 239.9%;
     gap: 0.5rem;
 }
 
@@ -832,8 +841,8 @@ body {
     display: flex;
     width: 100%;
     justify-content: center;
-    height: 45vh;
-    align-items: center;
+    height: 14.3rem;
+    align-items: flex-end;
 }
 
 .eco_frip_body {
@@ -855,8 +864,8 @@ body {
     color: #FF2C3A;
     width: 18rem;
     position: absolute;
-    top: 134rem;
-    right: 4rem;
+    top: 146.6rem;
+    right: 6.4rem;
 }
 
 .eco_ico_box {
@@ -911,7 +920,7 @@ body {
 .c_rev_body {
     display: flex;
     width: 88vw;
-    height: 68vh;
+    height: 20rem;
     background: linear-gradient(235.9deg, #FF2C3A 42.66%, rgba(255, 44, 58, 0) 230.88%);
     border-radius: 5px;
     align-items: center;

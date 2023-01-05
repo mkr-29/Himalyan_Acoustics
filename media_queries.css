@@ -1,8 +1,8 @@
 /* Media Query for Desktops and Laptops */
 @media screen and (min-width: 1400px){
   .prod_range-slider {
-    top: 78.2rem;
-    left: 21.1rem;
+    top: 86.7rem;
+    left: 22.9rem;
   }
 }
 @media screen and (max-width: 1400px){
@@ -65,8 +65,8 @@
     font-size: 40px;
   }
   .ser_off_line_socials {
-    left: -3.6rem;
-    top: 118%;
+    left: -4.1rem;
+    top: 114.5%;
   }
   .prod_range_title {
     font-size: 52px;
@@ -104,7 +104,7 @@
     font-size: 15px;
   }
   .ellipse_dec1 {
-    top: 367.5%;
+    top: 352.8%;
   }
   .c_rev_title {
     font-size: 52px;
@@ -120,18 +120,19 @@
     top: 334%;
   }
   .from_owner_orn {
-    top: 269.1rem;
-    left: 4.9rem;
+    top: 247.1rem;
+    left: 5.9rem;
   }
   .landing-slider {
-    width: 33rem;
+    width: 43rem;
+    height: 22rem;
   }
   .prod_range_carousel {
     width: 100%;
   }
   .product-slide {
     width: 38.7rem;
-    height: 24.3rem;
+    height: 22.6rem;
   }
 }
 @media screen and (max-width: 1100px) {
