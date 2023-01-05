@@ -76,7 +76,7 @@ const delay = 5000
 imageWrapper.style.setProperty('--per-view', perView)
 for (let i = 0; i < perView; i++) {
   imageWrapper.insertAdjacentHTML('beforeend', imageItems[i].outerHTML)
-  curImage.classList.toggle('.img-active');
+  curImage.classList.toggle('.serimg-active');
 }
 
 let autoScroll = setInterval(scrolling, delay)

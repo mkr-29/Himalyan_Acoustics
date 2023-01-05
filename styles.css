@@ -557,9 +557,9 @@ body {
     border-radius: 2%;
 }
 
-.img-active {
+.serimg-active{
     transform: scale(1.2);
-    filter: blur(0px);
+    filter:none;
 }
 
 /* IMAGE */
