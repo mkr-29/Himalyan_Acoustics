@@ -1,3 +1,16 @@
+window.addEventListener('load', () => {
+  const loader = document.querySelector('.loader');
+
+  loader.classList.add('loader-hidden');
+  loader.addEventListener('transitionend', () => {
+    document.body.removeChild(loader);
+  });
+});
+
+
+
+
+
 // Landing Slider
 const slides = document.querySelectorAll('.slide');
 const btnPrev = document.querySelector('.btn-prev');

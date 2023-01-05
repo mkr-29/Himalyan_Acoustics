@@ -9,6 +9,48 @@ body {
     overflow-x: hidden;
 }
 
+
+
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEFEFE;
+    transition: opacity 2s visibility 0.5s;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: '';
+    width: 75px;
+    height: 75px;
+    border: 15px solid #DDDDDD;
+    border-top-color: #FF2C3A;
+    border-radius: 50%;
+    animation: loading 2.75s ease infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+
 /* Header */
 .header {
     display: flex;
