@@ -313,7 +313,7 @@ body {
 .up_stats {
     display: flex;
     justify-content: space-between;
-    width: 26rem;
+    width: 100%;
 }
 
 .stat_per {
@@ -331,16 +331,27 @@ body {
 .stat2 {
     margin-top: 1.5rem;
     display: flex;
-    width: 80%;
+    width: 16.9rem;
     justify-content: space-between;
     align-items: center;
 }
+.stat2:nth-child(2) {
+    margin: 0;
+}
 
+.down_stats{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 105%;
+    align-items: flex-end;
+    justify-content: space-between;
+}
 .stat_brief,
 .stat_brief2 {
     font-size: 11px;
     display: flex;
-    width: 70%;
+    width: 11rem;
     font-weight: 400;
     font-size: 11px;
 }
