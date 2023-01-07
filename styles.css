@@ -838,7 +838,7 @@ body {
     position: absolute;
     rotate: 90deg;
     left: 3%;
-    top: 239.9%;
+    top: 112.7rem;
     gap: 0.5rem;
 }
 
@@ -1041,7 +1041,7 @@ body {
 
 .c_reviews {
     position: relative;
-    height: 10rem;
+    height: 12rem;
     overflow: hidden;
 }
 
@@ -1061,6 +1061,7 @@ body {
     font-size: 36px;
     color: white;
     width: 6rem;
+    margin-bottom: 1rem;
 }
 
 .c_ser_uline {
@@ -1078,18 +1079,25 @@ body {
     color: white;
 }
 
+.c_name_des{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin-top: 1rem; */
+}
 .c_rev_name {
     font-family: 'Ubuntu';
     font-style: normal;
-    font-weight: 700;
+    /* font-weight: 700; */
     font-size: 16px;
     color: white;
+    margin-top: 1rem;
 }
 
 .c_rev_designation {
     font-family: 'Ubuntu';
     font-style: normal;
-    font-weight: 700;
+    /* font-weight: 700; */
     font-size: 14px;
     color: white;
 }
