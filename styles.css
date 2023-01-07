@@ -148,11 +148,11 @@ body {
 
 .head_main {
     width: 88vw;
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
-    position: sticky;
+    /* position: sticky; */
 }
 
 .pg_title {

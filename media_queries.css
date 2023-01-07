@@ -1,7 +1,7 @@
 /* Media Query for Desktops and Laptops */
 @media screen and (min-width: 1400px) {
   .prod_range-slider {
-    top: 86.7rem;
+    top: 87.7rem;
     left: 22.9rem;
   }
 }
@@ -762,7 +762,13 @@
 
 @media screen and (max-width: 460px) {
   .landing {
-    height: 44rem;
+    height: 60rem;
+  }
+  .landing_below {
+    margin-top: 6rem;
+  }
+  .slider{
+    flex-direction: column;
   }
 
   .box {
@@ -812,7 +818,7 @@
 
   .ser_off_line_socials {
     left: 2.7rem;
-    top: 93.9rem;
+    top: 82.9rem;
     align-items: flex-end;
   }
 
@@ -1008,10 +1014,10 @@
     height: 2rem;
   }
 
-  .ser_off_line_socials {
+  /* .ser_off_line_socials {
     left: 6.5rem;
     top: 83rem;
-  }
+  } */
 
   .prod_range-slider {
     top: 122rem;
