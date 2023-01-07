@@ -106,9 +106,12 @@ const imageItems = document.querySelectorAll('.image-wrapper > *')
 let curImage = imageItems[1];
 const imageLength = imageItems.length
 
+const perView = 3;
 //If screen width is less than 460 px then change perview to 1
+if (window.innerWidth < 460) {
+  perView = 1;
+}
 
-const perView = 3
 let totalScroll = 0
 const delay = 5000
 
