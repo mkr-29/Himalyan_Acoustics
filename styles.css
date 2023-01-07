@@ -740,23 +740,24 @@ body {
 
 .prod_range_title {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     font-weight: 700;
     font-size: 48px;
+    gap: 1rem;
     color: #FF2C3A;
 }
 
-.prod_range_range {
+.prod_range_rang {
     color: #959595;
-    font-weight: 700;
-    font-size: 32px;
+    /* font-weight: 700; */
+    /* font-size: 32px; */
 }
 
 .prod_range_carousel {
     margin-top: 2rem;
     display: flex;
     width: 100%;
-    height: 28rem;
+    height: 30rem;
     justify-content: flex-end;
     align-items: flex-end;
 }

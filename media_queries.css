@@ -1,7 +1,7 @@
 /* Media Query for Desktops and Laptops */
 @media screen and (min-width: 1400px) {
   .prod_range-slider {
-    top: 87.7rem;
+    top: 85.7rem;
     left: 22.9rem;
   }
 }
@@ -681,6 +681,8 @@
 
   .pg_title {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .navlinks {
@@ -765,7 +767,7 @@
     height: 60rem;
   }
   .landing_below {
-    margin-top: 6rem;
+    margin-top: 5.5rem;
   }
   .slider{
     flex-direction: column;
