@@ -100,41 +100,96 @@ btnPrev.addEventListener('click', function () {
 });
 
 //Services Offered Carousel
-const imageWrapper = document.querySelector('.image-wrapper')
-const imageItems = document.querySelectorAll('.image-wrapper > *')
-let curImage = imageItems[1];
-const imageLength = imageItems.length
+const serSlides = document.querySelectorAll('.ser-img');
+const serMaxSlide = serSlides.length;
 
-const perView = 3;
-//If screen width is less than 460 px then change perview to 1
-if (window.innerWidth < 460) {
-  perView = 1;
-}
+serTitle = document.getElementById('serTitle');
+serInfo = document.getElementById('serText');
 
-let totalScroll = 0
-const delay = 5000
+var services = [
+  "Wooden Flooring",
+  "False Ceiling",
+  "Wooden Tiles",
+  "Dummy Text"
+]
 
-imageWrapper.style.setProperty('--per-view', perView)
-for (let i = 0; i < perView; i++) {
-  imageWrapper.insertAdjacentHTML('beforeend', imageItems[i].outerHTML)
-  curImage.classList.toggle('.serimg-active');
-}
+var serDesc = [
+  "Lorem ipsum dolor sit amet\, consectetur adipiscing elit\,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation",
+  "Lorem ipum dolor sit amet\, consectetur adipiscing elit\,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation",
+  "Lorem ipsiuum dol sit amet\, consectetur adipiscing elit\,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation",
+  "Lorem ipsiuum dol sit amet\, consectetur adipiscing elit\,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation",
+]
 
-let autoScroll = setInterval(scrolling, delay)
+let serSlideCounter = 0;
 
-function scrolling() {
-  totalScroll++
-  if (totalScroll == imageLength + 1) {
-    clearInterval(autoScroll)
-    totalScroll = 1
-    imageWrapper.style.transition = '0s'
-    imageWrapper.style.left = '0'
-    autoScroll = setInterval(scrolling, delay)
+serSlides.forEach(
+  (serSlide, serIndex) => {
+    serSlide.style.left = `${serIndex * 110}%`
   }
-  const widthEl = document.querySelector('.image-wrapper > :first-child').offsetWidth + 24
-  imageWrapper.style.left = `-${totalScroll * widthEl}px`
-  imageWrapper.style.transition = '0.5s'
+);
+
+const updateServicesInfo = function () {
+  serTitle.innerHTML = services[serSlideCounter];
+  serInfo.innerHTML = serDesc[serSlideCounter];
 }
+
+const serSlideImage = function () {
+  serSlides.forEach(
+    (serSlide) => {
+      serSlide.style.transform = `translateX(-${serSlideCounter * 110}%)`
+    }
+  )
+};
+
+const goSerNext = function () {
+  if (serSlideCounter != serMaxSlide - 1) {
+    serSlideCounter++;
+  } else {
+    serSlideCounter = 0;
+  }
+  serSlideImage();
+  updateServicesInfo();
+}
+
+//Slides will slide automatically
+let autoSerSlide = setInterval(goSerNext, 4000);
+
+
+// const imageWrapper = document.querySelector('.image-wrapper')
+// const imageItems = document.querySelectorAll('.image-wrapper > *')
+// let curImage = imageItems[1];
+// const imageLength = imageItems.length
+
+// const perView = 3;
+// //If screen width is less than 460 px then change perview to 1
+// if (window.innerWidth < 460) {
+//   perView = 1;
+// }
+
+// let totalScroll = 0
+// const delay = 5000
+
+// imageWrapper.style.setProperty('--per-view', perView)
+// for (let i = 0; i < perView; i++) {
+//   imageWrapper.insertAdjacentHTML('beforeend', imageItems[i].outerHTML)
+//   curImage.classList.toggle('.serimg-active');
+// }
+
+// let autoScroll = setInterval(scrolling, delay)
+
+// function scrolling() {
+//   totalScroll++
+//   if (totalScroll == imageLength + 1) {
+//     clearInterval(autoScroll)
+//     totalScroll = 1
+//     imageWrapper.style.transition = '0s'
+//     imageWrapper.style.left = '0'
+//     autoScroll = setInterval(scrolling, delay)
+//   }
+//   const widthEl = document.querySelector('.image-wrapper > :first-child').offsetWidth + 24
+//   imageWrapper.style.left = `-${totalScroll * widthEl}px`
+//   imageWrapper.style.transition = '0.5s'
+// }
 
 
 //Product Slider
