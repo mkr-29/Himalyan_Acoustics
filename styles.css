@@ -9,7 +9,24 @@ body {
     overflow-x: hidden;
 }
 
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
 
+.my-float{
+	margin-top:16px;
+}
 
 
 .loader {
@@ -148,11 +165,11 @@ body {
 
 .head_main {
     width: 88vw;
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
-    position: sticky;
+    /* position: sticky; */
 }
 
 .pg_title {
@@ -313,7 +330,7 @@ body {
 .up_stats {
     display: flex;
     justify-content: space-between;
-    width: 26rem;
+    width: 100%;
 }
 
 .stat_per {
@@ -331,16 +348,27 @@ body {
 .stat2 {
     margin-top: 1.5rem;
     display: flex;
-    width: 80%;
+    width: 16.9rem;
     justify-content: space-between;
     align-items: center;
 }
+.stat2:nth-child(2) {
+    margin: 0;
+}
 
+.down_stats{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 105%;
+    align-items: flex-end;
+    justify-content: space-between;
+}
 .stat_brief,
 .stat_brief2 {
     font-size: 11px;
     display: flex;
-    width: 70%;
+    width: 11rem;
     font-weight: 400;
     font-size: 11px;
 }
@@ -712,23 +740,24 @@ body {
 
 .prod_range_title {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     font-weight: 700;
     font-size: 48px;
+    gap: 1rem;
     color: #FF2C3A;
 }
 
-.prod_range_range {
+.prod_range_rang {
     color: #959595;
-    font-weight: 700;
-    font-size: 32px;
+    /* font-weight: 700; */
+    /* font-size: 32px; */
 }
 
 .prod_range_carousel {
     margin-top: 2rem;
     display: flex;
     width: 100%;
-    height: 28rem;
+    height: 30rem;
     justify-content: flex-end;
     align-items: flex-end;
 }
@@ -827,7 +856,7 @@ body {
     position: absolute;
     rotate: 90deg;
     left: 3%;
-    top: 239.9%;
+    top: 112.7rem;
     gap: 0.5rem;
 }
 
@@ -1030,7 +1059,7 @@ body {
 
 .c_reviews {
     position: relative;
-    height: 10rem;
+    height: 12rem;
     overflow: hidden;
 }
 
@@ -1050,6 +1079,7 @@ body {
     font-size: 36px;
     color: white;
     width: 6rem;
+    margin-bottom: 1rem;
 }
 
 .c_ser_uline {
@@ -1067,18 +1097,25 @@ body {
     color: white;
 }
 
+.c_name_des{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin-top: 1rem; */
+}
 .c_rev_name {
     font-family: 'Ubuntu';
     font-style: normal;
-    font-weight: 700;
+    /* font-weight: 700; */
     font-size: 16px;
     color: white;
+    margin-top: 1rem;
 }
 
 .c_rev_designation {
     font-family: 'Ubuntu';
     font-style: normal;
-    font-weight: 700;
+    /* font-weight: 700; */
     font-size: 14px;
     color: white;
 }

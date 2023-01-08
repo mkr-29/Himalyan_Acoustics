@@ -1,7 +1,7 @@
 /* Media Query for Desktops and Laptops */
 @media screen and (min-width: 1400px) {
   .prod_range-slider {
-    top: 83.7rem;
+    top: 85.7rem;
     left: 22.9rem;
   }
 }
@@ -681,6 +681,8 @@
 
   .pg_title {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .navlinks {
@@ -735,10 +737,6 @@
     font-size: 25px;
   }
 
-  .eco_frip {
-    height: 46rem;
-  }
-
   .ellipse_dec1 {
     top: 231.3rem;
   }
@@ -762,7 +760,13 @@
 
 @media screen and (max-width: 460px) {
   .landing {
-    height: 44rem;
+    height: 60rem;
+  }
+  .landing_below {
+    margin-top: 5.5rem;
+  }
+  .slider{
+    flex-direction: column;
   }
 
   .box {
@@ -796,6 +800,15 @@
     gap: 2rem;
   }
 
+  .float{
+    left: 10px;
+    bottom: 10px;
+    width: 45px;
+    height: 45px;
+  }
+  .my-float{
+    margin-top: 8px;
+  }
   .zero_one {
     font-size: 62px;
   }
@@ -812,7 +825,7 @@
 
   .ser_off_line_socials {
     left: 2.7rem;
-    top: 93.9rem;
+    top: 82.9rem;
     align-items: flex-end;
   }
 
@@ -839,9 +852,23 @@
   .services_offered_line {
     display: none;
   }
-
+  .prod_range_title{
+    font-size: 32px;
+  }
   .product_range_body {
     width: 88%;
+  }
+  .prod_range-slider{
+    top: 109.5rem;
+    left: 0.5rem;
+    overflow: hidden;
+  }
+  .product-slide{
+    width: 88vw;
+    overflow: hidden;
+  }
+  .prod_range_carousel{
+    height: 23rem;
   }
 
   .prod_range_box_body_car_nav {
@@ -906,11 +933,23 @@
   }
 
   .eco_frip_title {
-    top: 173rem;
+    top: 182rem;
+  }
+  .eco_frip{
+    margin-top: 7rem;
+    height: 100%;
   }
 
   .con_socials {
     rotate: 0deg;
+  }
+  .c_rev_body{
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .c_rev_review{
+    font-size: 11px;
+    width: 80%;
   }
 }
 
@@ -970,11 +1009,6 @@
     left: 10.2rem;
   }
 
-  .eco_frip_title {
-    top: 194rem;
-    right: 1rem;
-  }
-
   .from_owner_orn {
     top: 407rem;
     left: 4.7rem;
@@ -1008,25 +1042,13 @@
     height: 2rem;
   }
 
-  .ser_off_line_socials {
+  /* .ser_off_line_socials {
     left: 6.5rem;
     top: 83rem;
-  }
+  } */
 
-  .prod_range-slider {
-    top: 122rem;
-    left: 1.25rem;
-    width: 19rem;
-  }
 
-  .product-slide {
-    width: 20rem;
-    height: 14rem;
-  }
 
-  .prod_range_carousel {
-    height: 18rem;
-  }
 
   .prod_range_box_body_car_nav {
     z-index: 5;
@@ -1049,15 +1071,6 @@
   .ser_off_socials_pr {
     top: 147rem;
     left: 6rem;
-  }
-
-  .eco_frip_title {
-    top: 190rem;
-  }
-
-  .c_rev_body {
-    flex-direction: column;
-    height: 28rem;
   }
 
   .c_rev {
