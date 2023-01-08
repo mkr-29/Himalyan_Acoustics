@@ -99,7 +99,6 @@ btnPrev.addEventListener('click', function () {
   updateLandingData();
 });
 
-
 //Services Offered Carousel
 const imageWrapper = document.querySelector('.image-wrapper')
 const imageItems = document.querySelectorAll('.image-wrapper > *')
@@ -174,6 +173,8 @@ const prodSlideImage = function () {
     }
   )
 };
+
+
 const goProdNext = function () {
   if (productSlideCounter != prodMaxSlide - 1) {
     productSlideCounter++;
@@ -196,6 +197,8 @@ const goProdPrev = function () {
 }
 productBtnPrev.addEventListener('click', goProdPrev);
 
+//Slides will slide automatically
+let autoProdSlide = setInterval(goProdNext, 5000);
 
 //Reviews Slider
 const reviewSlides = document.querySelectorAll('.c_review');
@@ -246,3 +249,6 @@ const goReviewPrev = function () {
   reviewSlideImage();
 }
 reviewBtnPrev.addEventListener('click', goReviewPrev);
+
+//Automatic Slider for Reviews
+let autoReviewSlide = setInterval(goReviewNext, 6000);
