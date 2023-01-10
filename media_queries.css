@@ -204,7 +204,7 @@
   .landing_whole,
   .landing_below_content,
   .services_offered_whole {
-    width: 80vw;
+    width: 98vw;
   }
 
   .navlinks {
@@ -759,26 +759,74 @@
 }
 
 @media screen and (max-width: 460px) {
+  html,
+  body{
+    width:100%;
+    overflow-x:hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .head_up_left {
+    width: 95%;
+  }
+  .head_up {
+    align-items: center;
+  }
   .landing {
+    width: 92%;
     height: 60rem;
+    margin-right: 0;
   }
   .landing_below {
-    margin-top: 5.5rem;
+    margin-top: 0;
+  }
+  .landing_below_content, .services_offered_whole {
+    width: 92vw;
+  }
+  .ser_off_line_socials {
+    left: 0.7rem;
+    top: 76.9rem;
   }
   .slider{
     flex-direction: column;
   }
-
+  .ser_off_body {
+    margin-top: 1rem;
+  }
+  .head_up_right {
+    width: 95%;
+  }
+  .car_aso {
+    justify-content: space-between;
+    width: 45%;
+    margin: 0;
+  }
+  .nav_up_line{
+    width: 95%;
+  }
+  .head_main{
+    width: 95%;
+  }
   .box {
     width: 17rem;
     height: 14rem;
   }
-
+  .ser_off_carousel {
+    max-width: 100%;
+  }
   .col_pin {
     top: 52.7rem;
     left: 5rem;
   }
-
+  .image-wrapper {
+    height: 14rem;
+    width: 23rem;
+  }
+  .ser-img {
+    width: 100%;
+    height: 100%;
+  }
   .ellipse1 {
     top: 57.8rem;
     width: 8rem;
@@ -822,13 +870,6 @@
     width: 9rem;
     font-size: 18px;
   }
-
-  .ser_off_line_socials {
-    left: 2.7rem;
-    top: 82.9rem;
-    align-items: flex-end;
-  }
-
   .meshed_rectangle1 {
     top: 96.6rem;
     left: 0;
@@ -859,16 +900,19 @@
     width: 88%;
   }
   .prod_range-slider{
-    top: 109.5rem;
-    left: 0.5rem;
+    top: 113rem;
+    left: 1.5rem;
+    width: 86.5vw;
     overflow: hidden;
   }
   .product-slide{
     width: 88vw;
     overflow: hidden;
+    height: 15rem;
   }
   .prod_range_carousel{
     height: 23rem;
+    margin-top: 2.5rem;
   }
 
   .prod_range_box_body_car_nav {
@@ -906,11 +950,26 @@
   .why_us_ic {
     width: 8rem;
   }
-
+  .prime-partners {
+    height: 100%;
+  }
+  .from_owner_orn {
+    top: 373rem;
+    left: 4.7rem;
+    font-size: 12rem;
+  }
+  .line_foot {
+    margin-top: 0;
+  }
   .why_us {
     height: 39rem;
   }
-
+  footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 0rem;
+    background-color: rgb(235, 235, 235);
+  }
   .why_us_body {
     height: 78%;
   }
@@ -967,10 +1026,6 @@
     flex-direction: column;
   }
 
-  .head_up_right {
-    width: 100%;
-  }
-
   .navlinks {
     width: 100%;
   }
@@ -990,29 +1045,14 @@
     left: 5rem;
   }
 
-  .landing {
-    height: 58rem;
-  }
-
   .ser_off_title {
     font-size: 32px;
     text-align: center;
   }
 
-  .ser_off_line_socials {
-    left: 1.7rem;
-    top: 80.9rem;
-  }
-
   .ser_off_socials_pr {
     top: 116.2rem;
     left: 10.2rem;
-  }
-
-  .from_owner_orn {
-    top: 407rem;
-    left: 4.7rem;
-    font-size: 12rem;
   }
 
   .owner_fro {
@@ -1072,11 +1112,6 @@
     top: 147rem;
     left: 6rem;
   }
-
-  .c_rev {
-    margin-top: 0;
-  }
-
   .c_reviews {
     width: 100%;
     padding: 1rem;

@@ -596,7 +596,7 @@ body {
 
 .services_offered_whole {
     display: flex;
-    width: 88vw;
+    width: 84vw;
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
@@ -636,6 +636,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .ser_off_carousel {
