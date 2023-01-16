@@ -107,17 +107,31 @@ serTitle = document.getElementById('serTitle');
 serInfo = document.getElementById('serText');
 
 var services = [
-  "Wooden Flooring",
-  "False Ceiling",
-  "Wooden Tiles",
-  "Dummy Text"
+  "Auditoriums",
+  "Banquet Halls",
+  "Conference Hall",
+  "Disco's & Lounges",
+  "Gymnasiums",
+  "Home Theaters",
+  "Multipurpose Hall",
+  "Offices",
+  "Studios",
+  "Restaurants",
+  "Worship Places"
 ]
 
 var serDesc = [
-  "Lorem ipsum dolor sit amet\, consectetur adipiscing elit\,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation",
-  "Lorem ipum dolor sit amet\, consectetur adipiscing elit\,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation",
-  "Lorem ipsiuum dol sit amet\, consectetur adipiscing elit\,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation",
-  "Lorem ipsiuum dol sit amet\, consectetur adipiscing elit\,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation",
+  "We have to take care the stage differently\, where most of the sounds will be played.",
+  "Banquet Halls are the places, which are built to host thefunctions like marriages, events, parties etc.",
+  "Conference halls are basically meant for the exchange of communication.",
+  "Discotheques and lounges are comparatively small as compare to the banquet halls.",
+  "Gymnasiums are the multi-use spaces and are used forsporting events.",
+  "Home Theater is an area where most of the people give the least attention on acoustics.",
+  "Multipurpose hall as an area which could be used for multiple kind of activities.",
+  "Offices: Bangalore; Gurgaon; Bihar, Bhagalpur; Office Jodhpur; OSTRO Delhi;",
+  "Do you know the Elementor image box height? Offering the best image box wordpress plugin.",
+  "Offering the Elementor image box with button. We are offering image box carousel elementor",
+  "Offering the Elementor image box with button. We are offering image box carousel elementor"
 ]
 
 let serSlideCounter = 0;
@@ -203,9 +217,12 @@ productTitle = document.getElementById('product-title');
 productInfo = document.getElementById('product-info');
 
 var products = [
-  "Wooden Flooring",
-  "False Ceiling",
-  "Wooden Tiles"
+  "CEILING",
+  "WALLS",
+  "FLOOR",
+  "DOOR",
+  "WINDOW",
+  "PARTITIONS"
 ]
 
 var productDesc = [
