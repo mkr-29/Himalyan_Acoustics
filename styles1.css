@@ -51,15 +51,6 @@ strong {
   margin-bottom: 1rem;
 }
 
-.accenture {
-  grid-area: 'accenture';
-  height: 3rem;
-  width: 5rem;
-  display: flex;
-  justify-content: center;
-
-}
-
 .partners {
   width: 88vw;
   display: flex;
@@ -69,6 +60,40 @@ strong {
   margin-top: 2.5rem;
   justify-content: center;
   margin-bottom: 2rem;
+}
+
+.partners_body{
+  display: flex;
+    margin-top: 4rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.partners_carousel{
+  max-width: 94%;
+}
+
+.partners-image-wrapper{
+  height: 20rem;
+    width: 30rem;
+    position: relative;
+    transition: .3s;
+}
+
+.par-img{
+  width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 2%;
+    transition: 1s;
+}
+
+.parimg-active {
+  transform: scale(1.2);
+  filter: none;
 }
 
 .contact-us{

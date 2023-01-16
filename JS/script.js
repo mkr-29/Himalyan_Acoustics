@@ -168,7 +168,6 @@ const goSerNext = function () {
 //Slides will slide automatically
 let autoSerSlide = setInterval(goSerNext, 4000);
 
-
 // const imageWrapper = document.querySelector('.image-wrapper')
 // const imageItems = document.querySelectorAll('.image-wrapper > *')
 // let curImage = imageItems[1];
@@ -205,6 +204,27 @@ let autoSerSlide = setInterval(goSerNext, 4000);
 //   imageWrapper.style.transition = '0.5s'
 // }
 
+// Sponsors Slider
+const parSlides = document.querySelectorAll('.par-img');
+const psrMaxSlide = parSlides.length;
+
+let parSlideCounter = 0;
+
+parSlides.forEach(
+  (parSlide, parIndex) => {
+    parSlide.style.left = `${parIndex * 110}%`
+  }
+);
+
+const parSlideImage = function () {
+  parSlides.forEach(
+    (parSlide) => {
+      parSlide.style.transform = `translateX(-${parSlideCounter * 110}%)`
+    }
+  )
+};
+
+let autoParSlide = setInterval(goSerNext, 4000);
 
 //Product Slider
 const productSlides = document.querySelectorAll('.product-slide');
