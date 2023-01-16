@@ -349,4 +349,4 @@ const goReviewPrev = function () {
 reviewBtnPrev.addEventListener('click', goReviewPrev);
 
 //Automatic Slider for Reviews
-let autoReviewSlide = setInterval(goReviewNext, 6000);
+let autoReviewSlide = setInterval(goReviewNext, 66000);
