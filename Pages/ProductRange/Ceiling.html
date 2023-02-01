@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Himalayan Acoustics</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles1.css" />
+    <link rel="stylesheet" href="media_queries.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./Icons/favicon Himalyan Acoustics.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../../CSS/Header.css" />
+    <link rel="stylesheet" href="../../CSS/Footer.css" />
+    <link rel="stylesheet" href="../../CSS/Styles.css" />
+    <link rel="stylesheet" href="../../CSS/Absorption.css" />
+    <link rel="stylesheet" href="../../CSS/Temp1.css" />
+  </head>
+
+  <body>
+    <!-- Whatsapp Float Icon -->
+    <a
+      href="https://api.whatsapp.com/send?phone=+919779512233&text=Hello"
+      class="float"
+      target="_blank"
+    >
+      <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+    <!-- Header starts -->
+    <div class="header">
+      <!-- Upper portion of header line starts -->
+      <div class="head_up">
+        <!-- Left portion of upper portion of header line starts -->
+        <div class="head_up_left">
+          <!-- Mail -->
+          <a href="mailto: sales@kpaiindia.com" class="mail_nav"
+            ><i class="fa-solid fa-envelope mail__nav_ico"></i
+            ><span class="mail_nav_txt">sales@kpaiindia.com</span></a
+          >
+          <!-- Phone Number -->
+          <a href="callto: +919779512233" class="phone_nav"
+            ><i class="fa-solid fa-phone phone_nav_ico"></i
+            ><span class="phone_nav_txt">+91 9779 512 233</span></a
+          >
+        </div>
+        <!-- Right portion of upper portion of header line starts -->
+        <div class="head_up_right">
+          <!-- Socials -->
+          <div class="car_aso">
+            <a href="#" class="careers">Careers</a>
+            <a href="#" class="associates">Associate</a>
+          </div>
+          <a href="facebook.com" class="facebook"
+            ><img class="fb_ico" src="../../Assets/Header/fbook.svg"
+          /></a>
+          <a href="facebook.com" class="facebook"
+            ><img class="ln_ico" src="../../Assets/Header/lnkdn.svg"
+          /></a>
+          <a href="facebook.com" class="facebook"
+            ><img class="tw_ico" src="../../Assets/Header/twitt.svg"
+          /></a>
+          <a href="facebook.com" class="facebook"
+            ><img class="in_ico" src="../../Assets/Header/insta.svg"
+          /></a>
+        </div>
+      </div>
+      <!-- Header line -->
+      <div class="nav_up_line"></div>
+      <!-- Lower portion of header line starts -->
+      <div class="head_main" id="myTopnav">
+        <!-- Logo -->
+        <a href="/" class="pg_title">
+          <img src="./Assets/Images/himalyan-logo altered.png" alt="" />
+        </a>
+        <!-- Navigation links -->
+        <div class="navlinks">
+          <a onclick="scroll_to_top()" href="/" class="home_nav navlink"
+            >HOME</a
+          >
+          <a
+            onclick="smooth_scroll_to_id('prod_range');"
+            class="products_nav navlink"
+            >PRODUCTS</a
+          >
+          <a
+            onclick="smooth_scroll_to_id('why-us')"
+            class="about_us_nav navlink"
+            >ABOUT US</a
+          >
+          <a onclick="smooth_scroll_to_id('con_us')" class="contact_nav navlink"
+            >CONTACT</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Function ScrollTo -->
+    <script>
+      function scroll_to_top() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      function scroll_to_id(id) {
+        var elmnt = document.getElementById(id);
+        elmnt.scrollIntoView();
+      }
+      function smooth_scroll_to_id(id) {
+        var elmnt = document.getElementById(id);
+        elmnt.scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+
+    <div class="temp1">
+      <div class="temp1_body">
+        <div class="temp1_texts">
+          <h1 class="temp1_title">Ceilings</h1>
+          <p class="temp1_desc">
+            Ceilings are very important to absorb the sound in any of the room.
+            Sound travel in a wave form and most of the reflections hit the
+            ceiling first. Ceiling help to dampen the sound to the utmost.
+            Ceiling tiles are common now a days as most of the people install
+            the ceilings for the purpose of decorations or for the fixation of
+            the lighting arrangements. But, the very important element which is
+            always ignored while installing the ceiling tiles are the acoustic
+            requirements.<br /><br />
+
+            Sitting in a big room with a gypsum decorative ceiling and watching
+            and understanding the speech of the TV is as difficult as you are
+            watching cinema in a hall 30 years back. As the entire surfaces of
+            your areas are reflective and the RT 60 is high, you will not be
+            able to understand the sound clearly which simply means that the
+            ceilings like gypsum are not perfect for the rooms where you want to
+            communicate or watch TV. This is always better you install
+            acoustical ceilings instead of the normal ceilings. These ceilings
+            are good for thermal insulations that means these will save energy
+            also. The wood Fiber Cement Composite Ceilings are best known for
+            its acoustic quality and broadband frequency absorption. The
+            absorption properties of wood fiber cement composite are always
+            better than any chemical bonded acoustic product as the core of the
+            cement bonded acoustic tile is softer as compare to any chemical
+            bonded product which is hard in nature. So, you will always love to
+            watch the TV in an acoustically treated room instead of a normal
+            room with the gypsum.<br /><br />
+
+            Acoustic ceiling is important and is not only for residential, but
+            this is very useful for the big spaces like offices, classrooms,
+            audio visual rooms, conference rooms and many more. Classrooms are
+            the most important segment where acoustic tile is used widely now a
+            days with the simple reason that classrooms are for the exchange of
+            the communication. As the classrooms are meant for the exchange of
+            communication, proper speech clarity or proper distribution of the
+            sound is very important, otherwise, audibility between the sender
+            and receiver will be very poor and nobody will be understanding
+            anything. Since wood fiber cement composite have very good sound
+            absorbing characteristics, this will do perfectly well even
+            applicated only in the ceilings. The wood fiber tiles are a green
+            product and have a long life as compare to any other ceilings. These
+            are good for thermal insulations, fire retardant, termite resistant,
+            water resistant and possess very good absorption properties.<br /><br />
+
+            So, next time whenever you plan for ceiling irrespective of the site
+            such as Home, Gym, Office, Restaurant or any other site. Plan for
+            the acoustic ceilings rather than any normal ceilings. These may be
+            slightly costlier than the normal ceiling but these are the
+            long-term investments.
+          </p>
+        </div>
+        <div class="temp1_imgsec">
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce1.jpg"
+              class="temp1_img"
+              alt="WOODEN DOTS"
+            />
+            <h3 class="temp1_imgtitle">APHONY GRACE SOUND BARRIER WITH DAMPNER</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce2.jpg"
+              class="temp1_img"
+              alt="APHONY FIBRIL"
+            />
+            <h3 class="temp1_imgtitle">APHONY GRACE SOUND BARRIER</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce3.jpg"
+              class="temp1_img"
+              alt="MERINO FABRIC"
+            />
+            <h3 class="temp1_imgtitle">ISO BLOCK</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce4.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">ISO PLY</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce5.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">SOUND BARRIER WITH DAMPNER</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce6.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">SOUND BARRIER</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce7.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">SOUND DAMPNER</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce8.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">SILENT BOARD</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce9.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">ISO BOARD</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce10.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">DAMPNER SHEET</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce11.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">VIB WALL CEILING CURB HANGER</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce12.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">VIBRATION HANGER</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce13.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">MF HF DIFFUSER</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce14.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">CONCAVE DIFFUSER</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce15.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">PYRAMID DIFFUSER</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce16.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">WOODEN DOTS</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce17.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">APHONY FIBRIL</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce18.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">MERINO FABRIC</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce19.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">MERINO</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce20.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">UNDER DECK INSULATION</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce21.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">APHONY FIBRETTE BAFFLES</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce22.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">APHONY FIBRETTE CLOUDS</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce23.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">APHONY GLOSS BAFFLE</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce24.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">APHONY GLOSS CLOUDS</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce25.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">INFRA BOARD</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce26.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">ABSORB WOOL</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce27.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">WOODLOT</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce28.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">ELEGANT PASTEABLE</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce29.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">ELEGANT FABRIC</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce30.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">STRETCH CREPE</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce31.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">ELEGANT TILE</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce32.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">APHONY GRACE</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce33.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">APHONY GLOSS</h3>
+          </div>
+          <div class="temp1_imgcard">
+            <img
+              src="../../Assets/Ceiling/Ce34.jpg"
+              class="temp1_img"
+              alt="MERINO"
+            />
+            <h3 class="temp1_imgtitle">APHONY FIBRETTE</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="line_foot"></div>
+    <!-- Footer -->
+
+    <footer class="footer">
+      <!-- Logo -->
+      <h1 class="footer_head">
+        Himalayan
+        <strong class="footer_head_r"> Acoustics </strong>
+      </h1>
+
+      <!-- Links -->
+      <div class="flinks">
+        <a onclick="scroll_to_top()" class="foot_link"> Home </a>
+        <a onclick="smooth_scroll_to_id('prod_range');" class="foot_link">
+          Products
+        </a>
+        <a onclick="smooth_scroll_to_id('why-us')" class="foot_link">
+          About Us
+        </a>
+        <a onclick="smooth_scroll_to_id('con_us')" class="foot_link">
+          Contact
+        </a>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="ser_off_socials con_socials footer-social_icons">
+        <a href=""
+          ><img class="con_ic" src="Icons/icon _facebook_.svg" alt=""
+        /></a>
+        <a href=""
+          ><img class="con_ic" src="Icons/icon _linkedin.svg" alt=""
+        /></a>
+        <a href=""
+          ><img class="con_ic" src="Icons/icon _twitter.svg" alt=""
+        /></a>
+        <a href=""
+          ><img class="con_ic" src="Icons/icon _instagram.svg" alt=""
+        /></a>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-contact">username@email.com | +91 452 482 5615</div>
+      <div class="footer-copyright">
+        © 2022 Himalyan Accounts (Kool Pack and Allied Industries) • All Rights
+        Reserved
+      </div>
+    </footer>
+  </body>
+</html>

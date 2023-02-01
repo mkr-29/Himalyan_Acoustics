@@ -1,0 +1,9 @@
+.footer_gap{
+    /* margin-bottom: 8rem; */
+}
+
+@media screen and (max-width: 400px){
+    .footer_gap{
+        /* margin: 0; */
+    }
+}
