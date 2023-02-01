@@ -1,0 +1,161 @@
+.services_offered {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.ser_off_title {
+  font-weight: 700;
+  font-size: 47px;
+  color: #ff2c3a;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.ser_off_socials {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.ser_off_right {
+  color: #959595;
+}
+
+.services_offered_whole {
+  display: flex;
+  width: 88vw;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.ser_off_line_socials {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  rotate: 90deg;
+  left: -3.6rem;
+  top: 14rem;
+}
+
+.services_offered_line {
+  /* position: absolute; */
+  width: 13rem;
+  height: 1px;
+  background-color: #ededed;
+  /* rotate: 90deg; */
+}
+
+.ser_off_ic {
+  rotate: -90deg;
+  width: 1.1rem;
+}
+
+.ellipse2 {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  width: 30rem;
+}
+
+.ser_off_body {
+  display: flex;
+  margin-top: 4rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 84vw;
+}
+
+.ser_off_carousel {
+  max-width: 94%;
+}
+
+.image-wrapper {
+  height: 20rem;
+  width: 30rem;
+  position: relative;
+  transition: 0.3s;
+}
+
+.ser-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  border-radius: 2%;
+  transition: 1s;
+}
+
+.serimg-active {
+  transform: scale(1.2);
+  filter: none;
+}
+
+/* IMAGE */
+
+.ellipse1 {
+  position: absolute;
+  width: 20rem;
+  left: 0;
+  top: -9.7rem;
+  z-index: -1;
+}
+
+.ser_off_textbox {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+
+.conf_halls {
+  font-weight: 700;
+  font-size: 20px;
+  color: #ff2c3a;
+  margin-bottom: 0.7rem;
+}
+
+.conf_text {
+  color: #5c5c5c;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  .image-wrapper {
+    height: 11rem;
+    width: 17rem;
+  }
+  .ellipse1 {
+    top: 93.3rem;
+    width: 10rem;
+  }
+  .ellipse2 {
+    top: 112rem;
+    width: 17rem;
+  }
+  .ser_off_line_socials {
+    display: none;
+  }
+  .ser_off_title {
+    font-size: 36px;
+    text-align: center;
+  }
+  .ser_off_body {
+    margin-top: 2rem;
+  }
+  .services_offered_whole {
+    width: 90vw;
+  }
+}

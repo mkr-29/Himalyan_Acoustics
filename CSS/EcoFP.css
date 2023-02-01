@@ -1,0 +1,99 @@
+.eco_frip {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 14.3rem;
+    align-items: flex-end;
+    position: relative;
+}
+
+.eco_frip_body {
+    display: flex;
+    justify-content: space-around;
+    width: 92vw;
+    gap: 1rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.eco_frip_title {
+    display: flex;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: right;
+    color: #FF2C3A;
+    width: 30rem;
+    position: absolute;
+    top: -6rem;
+    right: 6.4rem;
+}
+
+.eco_ico_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eco_ico_img {
+    width: 173px;
+    height: 121px;
+    background: #FF2C3A;
+    display: flex;
+    justify-content: center;
+}
+
+.eco_ico {
+    width: 4rem;
+}
+
+.eco_txt {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 0.5rem;
+    width: 8rem;
+    text-align: center;
+    color: black;
+}
+
+.meshed_rectangle2 {
+    position: absolute;
+    top: 10rem;
+    left: 4rem;
+}
+
+.meshed_rectangle3 {
+    z-index: -1;
+    position: absolute;
+    right: 4rem;
+    top: -2rem;
+}
+@media screen and (max-width: 400px){
+    .eco_frip_title{
+        font-size: 34px;
+        top: 186rem;
+        width: 90%;
+        position: inherit;
+    }
+    .eco_frip {
+        height: 100%;
+        margin-top: 2rem;
+    }
+    .meshed_rectangle2 {
+        top: 180rem;
+        width: 10rem;
+    }
+    .meshed_rectangle3 {
+        top: 210rem;
+        right: 0;
+        width: 10rem;
+    }
+    .eco_ico_img {
+        width: 147px;
+    }
+
+}

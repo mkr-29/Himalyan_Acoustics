@@ -1,0 +1,188 @@
+.product_range {
+    margin-top: 4rem;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.product_range_body {
+    width: 88vw;
+}
+
+.prod_range_title {
+    display: flex;
+    font-weight: 700;
+    font-size: 48px;
+    gap: 1rem;
+    color: #FF2C3A;
+}
+
+.prod_range_rang {
+    color: #959595;
+}
+
+.prod_range_carousel {
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    height: 30rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.prod_range-slider {
+    width: 35rem;
+    height: 23rem;
+    position: absolute;
+    top: 5.5rem;
+    left: 16.9rem;
+}
+
+.product-slide {
+    width: 37.7rem;
+    height: 22rem;
+    position: absolute;
+    transition: 1s;
+}
+
+.product-slide>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.15));
+    border-radius: 5px;
+}
+
+.prod-arrow {
+    border: none;
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+    background: #F5F5F5;
+    padding: 0 2rem;
+}
+
+
+.prod_range_box_outer {
+    background: #F5F5F5;
+    margin-left: 3.5rem;
+    margin-top: 2rem;
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.prod_range_box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 2.2rem;
+    margin-top: 5rem;
+}
+
+.prod_range_box_body {
+    margin-left: 5rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.prod_title {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #FF2C3A;
+}
+
+.prod_description {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.prod_range_box_body_car_nav {
+    width: 10rem;
+    height: auto;
+}
+
+.meshed_rectangle1 {
+    left: 4rem;
+    position: absolute;
+    top: 0rem;
+    width: 14rem;
+    z-index: -1;
+}
+
+.ser_off_socials_pr {
+    display: flex;
+    position: absolute;
+    rotate: 90deg;
+    left: 3%;
+    top: 32rem;
+    gap: 0.5rem;
+}
+
+@media screen and (max-width: 400px){
+    .prod_range-slider {
+        width: 18.7rem;
+        height: 12rem;
+        top: 221rem;
+        left: 1.9rem;
+    }
+    .product-slide{
+        width: 100%;
+        height: 100%;
+    }
+    .meshed_rectangle1 {
+        left: 0rem;
+        top: 116rem;
+        width: 9rem;
+    }
+    .ser_off_socials_pr {
+        rotate: 0deg;
+        top: 186rem;
+    }
+    .ser_off_ic {
+        rotate: 0deg;
+        width: 1.4rem;
+    }
+    .product_range_body {
+        width: 90%;
+    }
+    .prod_range_title {
+        font-size: 38px;
+        justify-content: center;
+    }
+    .prod_range_box {
+        flex-direction: column;
+    }
+    .prod_range_box_body{
+        margin: 0;
+    }
+    .prod_range_box_outer{
+        margin-left: 0;
+    }
+    .prod_range_carousel{
+        height: 26rem;
+    }
+    .prod_title{
+        font-size: 26px;
+    }
+    .prod_description{
+        font-size: 12px;
+    }
+    .prod_range_box_body_car_nav{
+        margin-top: 1rem;
+    }
+
+}
