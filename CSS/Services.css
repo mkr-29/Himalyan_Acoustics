@@ -54,7 +54,7 @@
 
 .ser_off_ic {
   rotate: -90deg;
-  width: 1.1rem;
+  width: 1.3rem;
 }
 
 .ellipse2 {
@@ -137,24 +137,30 @@
     height: 11rem;
     width: 17rem;
   }
+
   .ellipse1 {
     top: 93.3rem;
     width: 10rem;
   }
+
   .ellipse2 {
     top: 112rem;
     width: 17rem;
   }
+
   .ser_off_line_socials {
     display: none;
   }
+
   .ser_off_title {
     font-size: 36px;
     text-align: center;
   }
+
   .ser_off_body {
     margin-top: 2rem;
   }
+
   .services_offered_whole {
     width: 90vw;
   }
