@@ -1,7 +1,7 @@
 .landing {
   display: flex;
   justify-content: center;
-  height: 58vh;
+  height: 100%;
   margin-top: 2.5rem;
 }
 
@@ -346,5 +346,60 @@
 @media screen and (max-width: 400px) {
   .landing_whole{
     flex-direction: column;
+    gap: 2rem;
+  }
+  .landing_left{
+    width: 100%;
+  }
+  .call_to_action{
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .company_brief{
+    width: 100%;
+  }
+  .up_stats{
+    flex-direction: column;
+  }
+  .stat1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .down_stats{
+    gap: 0;
+  }
+  .stat2{
+    width: 100%;
+    margin: 0;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  .stat_per{
+    font-size: 38px;
+  }
+  .landing-right{
+    width: 100%;
+  }
+  .slider{
+    flex-direction: column;
+  }
+  .landing-slider{
+    height: 14rem;
+  }
+  .landing-slider-navigation{
+    flex-direction: row;
+  }
+  .btn-prev{
+    rotate: -90deg;
+  }
+  .dots{
+    flex-direction: row;
+  }
+  .btn-next{
+    rotate: 90deg;
   }
 }
