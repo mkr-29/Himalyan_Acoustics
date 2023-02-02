@@ -1,127 +1,149 @@
-.contact-us{
-    width: 100%;
-    display: flex;
+.contact-us {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-heading {
+  width: 48.8vw;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.contact-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  width: 48.8vw;
+  justify-content: space-between;
+}
+
+.contact-red {
+  /* padding: 2rem; */
+  /* height: 25rem; */
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  color: #ffffff;
+  flex-direction: column;
+  background: linear-gradient(
+    239.3deg,
+    #ff2c3a 27.01%,
+    #ffe199 174.43%,
+    #ff2c3a 174.43%
+  );
+  align-items: center;
+  justify-content: center;
+}
+
+.ellipse6 {
+  position: absolute;
+  left: 0;
+  top: 587%;
+}
+
+.contact_red_in {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 85%;
+  height: 100%;
+}
+
+.con_office_head {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+}
+.con_office_head:nth-child(1) {
+  margin-top: 1rem;
+}
+
+.con_office_body {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.contact-box:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-box:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.contact-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-social_icons {
+  margin: 2rem 2rem;
+}
+
+.con_socials {
+  display: flex;
+  align-items: center;
+  width: 36%;
+  justify-content: space-evenly;
+}
+
+.coffee {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  margin-top: 1rem;
+}
+
+.contact-map {
+  width: 48%;
+  margin-right: 1rem;
+  /* height: 30rem; */
+  /* border-radius: 3%; */
+  /* margin: 0rem 2rem; */
+}
+
+.googleMap,
+.map {
+  width: 49%;
+  height: 62vh;
+  filter: drop-shadow(4px 4px 27px rgba(0, 0, 0, 0.24));
+}
+
+.contact-bottm > h1 {
+  margin: 2rem;
+}
+
+@media screen and (max-width: 400px){
+  .contact-wrapper{
     flex-direction: column;
   }
-  
-  .contact-heading {
-    width: 48.8vw;
-    display: flex;
-    justify-content: flex-end;
-    margin: 0;
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-  }
-  
-  .contact-wrapper {
-    display: flex;
+  .contact-heading{
     width: 100%;
-    justify-content: space-between;
-  }
-  
-  .contact-details{
-    display: flex;
-    flex-direction: column;
-    width: 48.8vw;
-    justify-content: space-between;
-  }
-  
-  .contact-red {
-    /* padding: 2rem; */
-    /* height: 25rem; */
-    display: flex;
-    width: 100%;
-    height: 50vh;
-    color: #FFFFFF;
-    flex-direction: column;
-    background: linear-gradient(239.3deg, #FF2C3A 27.01%, #FFE199 174.43%, #FF2C3A 174.43%);
-    align-items: center;
     justify-content: center;
   }
-  
-  .ellipse6{
-    position: absolute;
-    left: 0;
-    top: 587%;
+  .contact-details{
+    width: 100%;
   }
-  
-  .contact_red_in{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 85%;
-    height: 100%;
-  }
-  
-  .con_office_head{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-  }
-  .con_office_head:nth-child(1){
-    margin-top: 1rem;
-  }
-  
-  .con_office_body{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-  }
-  
-  .contact-box:nth-child(1){
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .contact-box:nth-child(2){
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-  }
-  
-  
-  .contact-bottom {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .contact-social_icons {
-    margin: 2rem 2rem;
-  }
-  
-  .con_socials{
-    display: flex;
-    align-items: center;
-    width: 36%;
-    justify-content: space-evenly;
-  }
-  
-  .coffee {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    margin-top: 1rem;
-  }
-  
-  .contact-map {
-    width: 48%;
-    margin-right: 1rem;
-    /* height: 30rem; */
-    /* border-radius: 3%; */
-    /* margin: 0rem 2rem; */
-  }
-  
   .googleMap, .map {
-    width: 49%;
-    height: 62vh;
-    filter: drop-shadow(4px 4px 27px rgba(0, 0, 0, 0.24));
+    width: 100%;
+    height: 25rem;
   }
-  
-  .contact-bottm>h1 {
-    margin: 2rem;
-  }
+}
