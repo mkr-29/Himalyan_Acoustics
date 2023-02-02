@@ -350,3 +350,36 @@ reviewBtnPrev.addEventListener('click', goReviewPrev);
 
 //Automatic Slider for Reviews
 let autoReviewSlide = setInterval(goReviewNext, 66000);
+
+
+//Prime Partners Slide
+const primeSlides = document.querySelectorAll('.prime-partner-image');
+
+const primeMaxSlide = primeSlides.length;
+
+let primeSlideCounter = 0;
+
+primeSlides.forEach(
+  (primeSlide, primeIndex) => {
+    primeSlide.style.left = `${primeIndex * 60}%`
+  }
+);
+
+const primeSlideImage = function () {
+  primeSlides.forEach(
+    (primeSlide) => {
+      primeSlide.style.transform = `translateX(-${primeSlideCounter * 60}%)`
+    }
+  )
+};
+
+const goPrimeNext = function () {
+  if (primeSlideCounter != primeMaxSlide - 1) {
+    primeSlideCounter++;
+  } else {
+    primeSlideCounter = 0;
+  }
+  primeSlideImage();
+}
+
+let autoPrimeSlide = setInterval(goPrimeNext, 500);
