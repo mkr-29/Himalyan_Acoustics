@@ -39,7 +39,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #FEFEFE;
-    transition: opacity 2s visibility 0.5s;
+    transition: opacity 1s visibility 0.5s;
 }
 
 .loader-hidden {

@@ -342,3 +342,9 @@
   top: 72%;
   z-index: -1;
 }
+
+@media screen and (max-width: 400px) {
+  .landing_whole{
+    flex-direction: column;
+  }
+}
