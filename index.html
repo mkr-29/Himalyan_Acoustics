@@ -51,10 +51,10 @@
   <a href="https://api.whatsapp.com/send?phone=+919779512233&text=Hello" class="float" target="_blank">
     <i class="fa fa-whatsapp my-float"></i>
   </a>
-  <a onclick="scroll_to_top()" class="float sctop">
-    Scroll to Top!
-  </a>
 
+  <div id="progress">
+    <span id="progress-value">&#x1f815;</span>
+  </div>
 
   <!-- Header starts -->
   <div class="header">
@@ -102,10 +102,6 @@
 
   <!-- Function ScrollTo -->
   <script>
-    function scroll_to_top() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
     function scroll_to_id(id) {
       var elmnt = document.getElementById(id);
       elmnt.scrollIntoView();
@@ -240,165 +236,96 @@
       <div class="q_links_sec">
         <h2 class="q_links_sh">About</h2>
         <div class="q_links">
-          <a
-          href="/"
-          class="q_link"
-          >
-          News and Events
-        </a>
-        <a
-        href="/"
-        class="q_link"
-        >
-        FAQ's
-      </a>
-      <a
-      href="/"
-      class="q_link"
-      >
-      Manufacturing
-    </a>
-  </div>
-</div>
-<div class="q_links_ul"></div>
-<div class="q_links_sec">
-  <h2 class="q_links_sh">Product Categorization</h2>
-  <div class="q_links">
-    <a
-            href="./Pages/ProductCategorisation/Absorption.html"
-            class="q_link"
-            >
+          <a href="/" class="q_link">
+            News and Events
+          </a>
+          <a href="/" class="q_link">
+            FAQ's
+          </a>
+          <a href="/" class="q_link">
+            Manufacturing
+          </a>
+        </div>
+      </div>
+      <div class="q_links_ul"></div>
+      <div class="q_links_sec">
+        <h2 class="q_links_sh">Product Categorization</h2>
+        <div class="q_links">
+          <a href="./Pages/ProductCategorisation/Absorption.html" class="q_link">
             Absorption
           </a>
-          <a
-          href="./Pages/ProductCategorisation/Insulation.html"
-          class="q_link"
-          >
-          Insulation
-        </a>
-        <a
-        href="./Pages/ProductCategorisation/Vibration.html"
-        class="q_link"
-        >
-        Vibration
-      </a>
-      <a
-      href="./Pages/ProductCategorisation/Diffusion.html"
-      class="q_link"
-      >
-      Diffusion
-    </a>
-  </div>
-</div>
-<div class="q_links_ul"></div>
-<div class="q_links_sec">
-  <h2 class="q_links_sh">Product Range</h2>
-  <div class="q_links">
-    <a
-    href="./Pages/ProductRange/Ceiling.html"
-    class="q_link"
-    >
-    Ceiling
-  </a>
-  <a
-  href="./Pages/ProductRange/Walls.html"
-  class="q_link"
-  >
-  Walls
-</a>
-<a
-href="./Pages/ProductRange/Floor.html"
-class="q_link"
->
-Floor
-</a>
-<a
-href="./Pages/ProductRange/Door.html"
-class="q_link"
->
-Door
-</a>
-<a
-href="./Pages/ProductRange/Windows.html"
-class="q_link"
->
-Windows
-</a>
-<a
-href="./Pages/ProductRange/MovablePartitions.html"
-class="q_link"
->
-Movable Partitions
-</a>
-</div>
-</div>
-<div class="q_links_ul"></div>
-<div class="q_links_sec qsec4">
-  <h2 class="q_links_sh">Applications</h2>
-  <div class="q_links">
-    <a
-    href="./Pages/Applications/Auditoriums.html"
-    class="q_link"
-    >
-    Auditorium
+          <a href="./Pages/ProductCategorisation/Insulation.html" class="q_link">
+            Insulation
           </a>
-          <a
-            href="./Pages/Applications/Banquet.html"
-            class="q_link"
-            >
+          <a href="./Pages/ProductCategorisation/Vibration.html" class="q_link">
+            Vibration
+          </a>
+          <a href="./Pages/ProductCategorisation/Diffusion.html" class="q_link">
+            Diffusion
+          </a>
+        </div>
+      </div>
+      <div class="q_links_ul"></div>
+      <div class="q_links_sec">
+        <h2 class="q_links_sh">Product Range</h2>
+        <div class="q_links">
+          <a href="./Pages/ProductRange/Ceiling.html" class="q_link">
+            Ceiling
+          </a>
+          <a href="./Pages/ProductRange/Walls.html" class="q_link">
+            Walls
+          </a>
+          <a href="./Pages/ProductRange/Floor.html" class="q_link">
+            Floor
+          </a>
+          <a href="./Pages/ProductRange/Door.html" class="q_link">
+            Door
+          </a>
+          <a href="./Pages/ProductRange/Windows.html" class="q_link">
+            Windows
+          </a>
+          <a href="./Pages/ProductRange/MovablePartitions.html" class="q_link">
+            Movable Partitions
+          </a>
+        </div>
+      </div>
+      <div class="q_links_ul"></div>
+      <div class="q_links_sec qsec4">
+        <h2 class="q_links_sh">Applications</h2>
+        <div class="q_links">
+          <a href="./Pages/Applications/Auditoriums.html" class="q_link">
+            Auditorium
+          </a>
+          <a href="./Pages/Applications/Banquet.html" class="q_link">
             Banquet Halls
           </a>
-          <a
-          href="./Pages/Applications/Conference.html"
-          class="q_link"
-          >
-          Conference Halls
-        </a>
-          <a
-            href="./Pages/Applications/Disco.html"
-            class="q_link"
-          >
-          Discos and Lounges
-        </a>
-        <a
-        href="./Pages/Applications/Gymnasiums.html"
-        class="q_link"
-        >
-        Gymnasium
-      </a>
-      <a
-      href="./Pages/Applications/HomeTheater.html"
-      class="q_link"
-      >
-      Home Theaters
-    </a>
-    <a
-    href="./Pages/Applications/Multipurpose.html"
-    class="q_link"
-    >
-    Multi-Purpose Halls
-  </a>
-          <a
-          href="./Pages/Applications/Office.html"
-          class="q_link"
-          >
-          Office
-        </a>
-        <a
-        href="./Pages/Applications/Studios.html"
-        class="q_link"
-        >
-        Studios
-      </a>
-      <a
-      href="./Pages/Applications/Worship.html"
-      class="q_link"
-      >
-      Worship Places
-    </a>
-  </div>
-</div>
-</div>
+          <a href="./Pages/Applications/Conference.html" class="q_link">
+            Conference Halls
+          </a>
+          <a href="./Pages/Applications/Disco.html" class="q_link">
+            Discos and Lounges
+          </a>
+          <a href="./Pages/Applications/Gymnasiums.html" class="q_link">
+            Gymnasium
+          </a>
+          <a href="./Pages/Applications/HomeTheater.html" class="q_link">
+            Home Theaters
+          </a>
+          <a href="./Pages/Applications/Multipurpose.html" class="q_link">
+            Multi-Purpose Halls
+          </a>
+          <a href="./Pages/Applications/Office.html" class="q_link">
+            Office
+          </a>
+          <a href="./Pages/Applications/Studios.html" class="q_link">
+            Studios
+          </a>
+          <a href="./Pages/Applications/Worship.html" class="q_link">
+            Worship Places
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 
 
