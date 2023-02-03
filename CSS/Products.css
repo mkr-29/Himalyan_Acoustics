@@ -28,7 +28,7 @@
     margin-top: 2rem;
     display: flex;
     width: 100%;
-    height: 30rem;
+    height: 32rem;
     justify-content: flex-end;
     align-items: flex-end;
 }
@@ -147,13 +147,13 @@
 
     .meshed_rectangle1 {
         left: 0rem;
-        top: 116rem;
+        /* top: 116rem; */
         width: 9rem;
     }
 
     .ser_off_socials_pr {
         rotate: 0deg;
-        top: 186rem;
+        /* top: 186rem; */
     }
 
     .ser_off_ic {
@@ -163,6 +163,7 @@
 
     .product_range_body {
         width: 90%;
+        height: 34rem;
     }
 
     .prod_range_title {
