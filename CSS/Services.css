@@ -112,10 +112,18 @@
 .ser_off_textbox {
   margin-top: 1.2rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.services-box {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  width: 60%;
+  align-items: center;
+  width: 70vw;
 }
 
 .conf_halls {

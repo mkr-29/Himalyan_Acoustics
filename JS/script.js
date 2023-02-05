@@ -122,6 +122,9 @@ btnPrev.addEventListener('click', function () {
 const serSlides = document.querySelectorAll('.ser-img');
 const serMaxSlide = serSlides.length;
 
+const serBtnNext = document.getElementById('services-next')
+const serBtnPrev = document.getElementById('services-prev')
+
 serTitle = document.getElementById('serTitle');
 serInfo = document.getElementById('serText');
 
@@ -183,67 +186,18 @@ const goSerNext = function () {
   serSlideImage();
   updateServicesInfo();
 }
+serBtnNext.addEventListener('click', goSerNext);
 
-//Slides will slide automatically
-let autoSerSlide = setInterval(goSerNext, 4000);
-
-// const imageWrapper = document.querySelector('.image-wrapper')
-// const imageItems = document.querySelectorAll('.image-wrapper > *')
-// let curImage = imageItems[1];
-// const imageLength = imageItems.length
-
-// const perView = 3;
-// //If screen width is less than 460 px then change perview to 1
-// if (window.innerWidth < 460) {
-//   perView = 1;
-// }
-
-// let totalScroll = 0
-// const delay = 5000
-
-// imageWrapper.style.setProperty('--per-view', perView)
-// for (let i = 0; i < perView; i++) {
-//   imageWrapper.insertAdjacentHTML('beforeend', imageItems[i].outerHTML)
-//   curImage.classList.toggle('.serimg-active');
-// }
-
-// let autoScroll = setInterval(scrolling, delay)
-
-// function scrolling() {
-//   totalScroll++
-//   if (totalScroll == imageLength + 1) {
-//     clearInterval(autoScroll)
-//     totalScroll = 1
-//     imageWrapper.style.transition = '0s'
-//     imageWrapper.style.left = '0'
-//     autoScroll = setInterval(scrolling, delay)
-//   }
-//   const widthEl = document.querySelector('.image-wrapper > :first-child').offsetWidth + 24
-//   imageWrapper.style.left = `-${totalScroll * widthEl}px`
-//   imageWrapper.style.transition = '0.5s'
-// }
-
-// Sponsors Slider
-const parSlides = document.querySelectorAll('.par-img');
-const psrMaxSlide = parSlides.length;
-
-let parSlideCounter = 0;
-
-parSlides.forEach(
-  (parSlide, parIndex) => {
-    parSlide.style.left = `${parIndex * 110}%`
+const goSerPrev = function () {
+  if (serSlideCounter != 0) {
+    serSlideCounter--;
+  } else {
+    serSlideCounter = serMaxSlide - 1;
   }
-);
-
-const parSlideImage = function () {
-  parSlides.forEach(
-    (parSlide) => {
-      parSlide.style.transform = `translateX(-${parSlideCounter * 110}%)`
-    }
-  )
-};
-
-let autoParSlide = setInterval(goSerNext, 4000);
+  serSlideImage();
+  updateServicesInfo();
+}
+serBtnPrev.addEventListener('click', goSerPrev);
 
 //Product Slider
 const productSlides = document.querySelectorAll('.product-slide');
@@ -259,14 +213,17 @@ var products = [
   "CEILING",
   "WALLS",
   "FLOOR",
-  "DOOR",
-  "WINDOW",
+  "ROOFS",
+  "WINDOWS",
   "PARTITIONS"
 ]
 
 var productDesc = [
   "Lorem ipsum dolor sit amet\, consectetur adipiscing elit\,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation",
   "Lorem ipum dolor sit amet\, consectetur adipiscing elit\,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation",
+  "Lorem ipsiuum dol sit amet\, consectetur adipiscing elit\,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation",
+  "Lorem ipsiuum dol sit amet\, consectetur adipiscing elit\,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation",
+  "Lorem ipsiuum dol sit amet\, consectetur adipiscing elit\,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation",
   "Lorem ipsiuum dol sit amet\, consectetur adipiscing elit\,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation",
 ]
 
@@ -315,7 +272,7 @@ const goProdPrev = function () {
 productBtnPrev.addEventListener('click', goProdPrev);
 
 //Slides will slide automatically
-let autoProdSlide = setInterval(goProdNext, 5000);
+// let autoProdSlide = setInterval(goProdNext, 5000);
 
 //Reviews Slider
 const reviewSlides = document.querySelectorAll('.c_review');
