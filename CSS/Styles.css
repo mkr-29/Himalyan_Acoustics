@@ -51,8 +51,8 @@ html::-webkit-scrollbar-thumb {
 
 #progress {
   position: fixed;
-  bottom: 40px;
-  left: 40px;
+  bottom: 100px;
+  right: 20px;
   height: 60px;
   width: 60px;
   display: none;
@@ -80,8 +80,8 @@ html::-webkit-scrollbar-thumb {
   position: fixed;
   width: 60px;
   height: 60px;
-  bottom: 40px;
-  right: 40px;
+  bottom: 20px;
+  right: 20px;
   background-color: #25d366;
   color: #FFF;
   border-radius: 50px;
@@ -205,4 +205,13 @@ html::-webkit-scrollbar-thumb {
   .p_part_head {
     font-size: 2rem;
   }
+  #progress{
+    right: 10px;
+    bottom: 80px;
+  }
+  .float {
+    right: 10px;
+    bottom: 10px;
+  }
+
 }
