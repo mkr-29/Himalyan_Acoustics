@@ -4,6 +4,7 @@
     flex-direction: column;
     width: 100%;
 }
+
 .head_up {
     margin-top: 2.5rem;
     width: 88vw;
@@ -11,6 +12,7 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
 .head_up_left {
     font-size: 0.75rem;
     display: flex;
@@ -18,17 +20,21 @@
     font-weight: 400;
     justify-content: space-between;
 }
+
 .mail_nav {
     text-decoration: none;
     color: black;
     display: flex;
     align-items: center;
 }
-.mail_nav_txt, .phone_nav_txt {
+
+.mail_nav_txt,
+.phone_nav_txt {
     font-size: 14px;
     margin-left: 0.7rem;
     font-weight: 500;
 }
+
 .phone_nav {
     text-decoration: none;
     color: black;
@@ -39,9 +45,16 @@
 /* .phone_nav_ico {
     /* font-size: 1.15rem; */
 
-.fb_ico, .ln_ico, .tw_ico,
- .in_ico{
+.fb_ico,
+.ln_ico,
+.tw_ico,
+.in_ico {
     width: 1.1rem;
+}
+
+.navlink:hover {
+    color: #FF2C3A;
+    transition: 0.3s;
 }
 
 .nav_up_line {
@@ -117,6 +130,7 @@
     text-decoration: none;
     color: black;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .home_nav {
@@ -126,29 +140,35 @@
 
 /* For Phone */
 @media screen and (max-width: 400px) {
-    .head_up{
+    .head_up {
         flex-direction: column;
         gap: 1rem;
     }
-    .head_up_left{
+
+    .head_up_left {
         width: 100%;
         justify-content: space-between;
     }
-    .head_up_right{
+
+    .head_up_right {
         width: 100%;
         /* flex-direction: column; */
     }
-    .car_aso{
+
+    .car_aso {
         justify-content: space-between;
         width: 50%;
     }
-    .navlinks{
+
+    .navlinks {
         width: 100%;
     }
+
     .head_main {
         flex-direction: column;
     }
-    .header-logo{
+
+    .header-logo {
         text-align: center;
     }
 }

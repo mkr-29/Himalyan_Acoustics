@@ -39,6 +39,16 @@ strong {
   color: #747474;
 }
 
+html::-webkit-scrollbar {
+  background-color: #DDDDDD;
+  width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #FF2C3A;
+  width: 10px;
+}
+
 #progress {
   position: fixed;
   bottom: 40px;
@@ -180,16 +190,18 @@ strong {
   border-radius: 2%;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
   .partners-image-wrapper {
     height: 15rem;
     width: 50rem;
   }
+
   .prime-partner-image {
     width: 442px;
     height: 199px;
   }
-  .p_part_head{
+
+  .p_part_head {
     font-size: 2rem;
   }
 }
