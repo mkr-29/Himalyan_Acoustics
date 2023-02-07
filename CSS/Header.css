@@ -219,7 +219,6 @@
     font-size: 20px;
     color: var(--color-white);
     text-decoration: none;
-
     transition: all 0.3s;
 }
 
@@ -242,7 +241,7 @@
     display: block;
     position: absolute;
     left: 0;
-    top: 100%;
+    top: 80%;
     z-index: 100;
     background-color: var(--color-black);
 }
@@ -250,10 +249,12 @@
 .menu-bar ul li:hover .dropdown-menu ul {
     display: block;
     margin: 10px;
+    background-color: #d7d7d7;
+    padding-left: 1rem;
 }
 
 .menu-bar ul li:hover .dropdown-menu ul li {
-    width: 150px;
+    width: 180px;
     padding: 10px;
 }
 
@@ -264,7 +265,15 @@
 .dropdown-menu ul li:hover .dropdown-menu-1 {
     display: block;
     position: absolute;
-    left: 150px;
-    top: 0;
+    left: 170px;
+    top: -0.60rem;
     background-color: var(--color-black);
+}
+.dropdown-menu ul li:hover .dropdown-menu-1 ul{
+    background-color: #898989;
+    width: 15rem;
+    color: white;
+}
+.dropdown-menu ul li:hover .dropdown-menu-1 ul li{
+    width: 100%;
 }
