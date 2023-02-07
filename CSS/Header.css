@@ -143,6 +143,7 @@
     .head_up {
         flex-direction: column;
         gap: 1rem;
+        margin-top: 1rem;
     }
 
     .head_up_left {
