@@ -107,6 +107,7 @@ html::-webkit-scrollbar-thumb {
   align-items: center;
   background-color: #FEFEFE;
   transition: opacity 1s visibility 0.5s;
+  overflow: none;
 }
 
 .loader-hidden {
