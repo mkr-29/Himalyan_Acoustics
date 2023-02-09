@@ -64,6 +64,10 @@
     background-color: #747474;
 }
 
+.sub-menu1 {
+    display: none;
+}
+
 .car_aso {
     display: flex;
     justify-content: space-around;
@@ -108,6 +112,40 @@
     color: #FF2C3A;
 }
 
+.navlinks {
+    text-decoration: none;
+    margin-top: 0.5rem;
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+}
+
+/* .navlinks .icon {
+    display: none;
+}
+
+.navlink {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.home_nav {
+    color: #FF2C3A;
+} */
+
+
+
+
+
+/* New Nav code */
 .logo {
     color: var(--color-white);
     font-size: 30px;
